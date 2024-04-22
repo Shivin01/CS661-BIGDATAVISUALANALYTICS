@@ -1,9 +1,9 @@
 import React from 'react';
 import {XAxis, YAxis, ResponsiveContainer, BarChart, Bar} from 'recharts';
-import data from './data.json';
+import data from './2.6.2_output_update.json';
 
 const BarGraphMain = () => {
-    const updatedData = data.filter(d => d.country === "India").map((item) => {
+    const updatedData = data.filter(d => d.Country === "India").map((item) => {
         return {
             year: item['year'],
             lifeExp: item['lifeExp']

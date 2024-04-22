@@ -12,10 +12,11 @@ import {
 } from "~/components/ui/card"
 import {Link, useNavigate} from "react-router-dom";
 import {Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList} from "~/components/ui/breadcrumb.tsx";
+import {Slider} from "~/components/ui/slider"
 import React from "react";
-import {GenderWiseGraph} from "~/components/GenderDashboard/GenderBarGraph.tsx";
+import LineGraphComponent, {GenderWiseGraph} from "~/components/GenderDashboard/GenderBarGraph.tsx";
 import {MonthWiseGraph} from "~/components/GenderDashboard/MonthWiseGraph.tsx";
-import {QuarterWiseData} from "~/components/GenderDashboard/quarterWiseData.tsx";
+import {QuarterWiseData, quarterWiseData} from "~/components/GenderDashboard/quarterWiseData.tsx";
 import {AgeGroup} from "~/components/GenderDashboard/AgeGroupGraphs.tsx";
 import {PurposeOfVisitGraph} from "~/components/GenderDashboard/PurposeOfVisit.tsx";
 import {Button} from "~/components/ui/button.tsx";
@@ -23,7 +24,17 @@ import {Button} from "~/components/ui/button.tsx";
 // import {cn} from "~/lib/utils.ts";
 
 export function DashboardFTA() {
+    // type SliderProps = React.ComponentProps<typeof Slider>
 
+    const [slider, setSlider] = React.useState<string[]>(['2001'])
+    const [dragSlider, setdragSlider] = React.useState<string[]>(['2001'])
+    const handleSliderChange = (e) => {
+        setSlider(e)
+    }
+
+    const handleDragChange = (e) => {
+        setdragSlider(e)
+    }
     const navigate = useNavigate();
     const routeChange = () => {
         navigate('../compareFTA');
@@ -46,16 +57,72 @@ export function DashboardFTA() {
                 </header>
                 <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
                     <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+                        {/*<Card x-chunk="dashboard-01-chunk-0">*/}
+                        {/*    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">*/}
+                        {/*        <CardTitle className="text-sm font-medium">*/}
+                        {/*            Total Revenue*/}
+                        {/*        </CardTitle>*/}
+                        {/*        {dragSlider}*/}
+                        {/*    </CardHeader>*/}
+                        {/*    <CardContent>*/}
+                        {/*        <Slider defaultValue={slider} min={2001} max={2021} step={1}*/}
+                        {/*                onValueCommit={handleSliderChange}*/}
+                        {/*                onValueChange={handleDragChange}/>*/}
+                        {/*    </CardContent>*/}
+                        {/*</Card>*/}
+                        {/*<Card x-chunk="dashboard-01-chunk-1">*/}
+                        {/*    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">*/}
+                        {/*        <CardTitle className="text-sm font-medium">*/}
+                        {/*            Subscriptions*/}
+                        {/*        </CardTitle>*/}
+                        {/*        <Users className="h-4 w-4 text-muted-foreground"/>*/}
+                        {/*    </CardHeader>*/}
+                        {/*    <CardContent>*/}
+                        {/*        <div className="text-2xl font-bold">+2350</div>*/}
+                        {/*        <p className="text-xs text-muted-foreground">*/}
+                        {/*            +180.1% from last month*/}
+                        {/*        </p>*/}
+                        {/*    </CardContent>*/}
+                        {/*</Card>*/}
+                        {/*<Card x-chunk="dashboard-01-chunk-2">*/}
+                        {/*    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">*/}
+                        {/*        <CardTitle className="text-sm font-medium">Sales</CardTitle>*/}
+                        {/*        <CreditCard className="h-4 w-4 text-muted-foreground"/>*/}
+                        {/*    </CardHeader>*/}
+                        {/*    <CardContent>*/}
+                        {/*        <div className="text-2xl font-bold">+12,234</div>*/}
+                        {/*        <p className="text-xs text-muted-foreground">*/}
+                        {/*            +19% from last month*/}
+                        {/*        </p>*/}
+                        {/*    </CardContent>*/}
+                        {/*</Card>*/}
+                        {/*<Card x-chunk="dashboard-01-chunk-3">*/}
+                        {/*    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">*/}
+                        {/*        <CardTitle className="text-sm font-medium">Active Now</CardTitle>*/}
+                        {/*        <Activity className="h-4 w-4 text-muted-foreground"/>*/}
+                        {/*    </CardHeader>*/}
+                        {/*    <CardContent>*/}
+                        {/*        <div className="text-2xl font-bold">+573</div>*/}
+                        {/*        <p className="text-xs text-muted-foreground">*/}
+                        {/*            +201 since last hour*/}
+                        {/*        </p>*/}
+                        {/*    </CardContent>*/}
+                        {/*</Card>*/}
                     </div>
                     <div className="grid gap-4 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
-                        <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
+
+                        <Card
+                            className="xl:col-span-2" x-chunk="dashboard-01-chunk-4"
+                        >
                             <MonthWiseGraph/>
                         </Card>
-                            <QuarterWiseData/>
+                        <QuarterWiseData/>
                     </div>
 
                     <div className="grid gap-4 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
-                        <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
+                        <Card
+                            className="xl:col-span-2" x-chunk="dashboard-01-chunk-4"
+                        >
                             <GenderWiseGraph/>
                         </Card>
                         <Card x-chunk="dashboard-01-chunk-5">

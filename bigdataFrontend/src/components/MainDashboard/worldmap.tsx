@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Plot from 'react-plotly.js';
-import data from './data.json';
+import data from './2.6.2_output.json';
 import {Button} from "~/components/ui/button.tsx"
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts"
 
@@ -38,15 +38,15 @@ const WorldMap = () => {
 
     const processData = () => {
         const filterAndUnpack = (data, key, year) => {
-            return data.filter(d => parseInt(d.year) === year).map(d => d[key]);
+            return data.filter(d => parseInt(d.Year) === year).map(d => d[key]);
         };
 
         const framesData = [];
         const sliderStepsData = []
 
-        let num = 1952;
-        for (let i = 0; i <= 11; i++) {
-            const z = filterAndUnpack(data, 'lifeExp', num);
+        let num = 2016;
+        for (let i = 0; i <= 5; i++) {
+            const z = filterAndUnpack(data, 'Arrival', num);
             const locations = filterAndUnpack(data, 'iso_alpha', num);
             framesData[i] = {
                 data: [{z: z, locations: locations, text: locations}],
@@ -62,7 +62,7 @@ const WorldMap = () => {
                 }]
             })
 
-            num = num + 5
+            num = num + 1
         }
         setFrames(framesData)
         setSliderSteps(sliderStepsData)
