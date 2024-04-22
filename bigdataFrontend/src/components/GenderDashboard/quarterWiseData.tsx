@@ -11,11 +11,14 @@ import {
     SelectTrigger,
     SelectValue
 } from "~/components/ui/select.tsx";
+import { Progress } from "~/components/ui/progress"
 
 
 export function QuarterWiseData() {
 
     const [yearSelected, setYearSelected] = React.useState<string>('2005')
+    // const [total, settotal] = React.useState<string>('0')
+    let total = 0
 
     const years = Object.keys(data["January"])
 
@@ -62,6 +65,8 @@ export function QuarterWiseData() {
         }
     ]
 
+    total = q1+q2+q3+q4
+
     const updateData = () => {
         let q1: number = 0
         let q2: number = 0
@@ -82,6 +87,7 @@ export function QuarterWiseData() {
                 q4 += data[property][yearSelected]
             }
         }
+        total = q1+q2+q3+q4
 
         return [
             {
@@ -145,6 +151,7 @@ export function QuarterWiseData() {
                                         {item.name}
                                     </p>
                                 </div>
+                                <Progress value={(item.value/total)*100}/>
                                 <div className="ml-auto font-medium">{item.value}</div>
                             </div>
                         )

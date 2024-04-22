@@ -16,8 +16,6 @@ import {
 import {Link, useNavigate} from "react-router-dom";
 import WorldMap from "~/components/MainDashboard/worldmap.tsx";
 import BarGraphMain from "~/components/MainDashboard/BarGraphMain.tsx";
-import StackBar from "~/components/FinancialData/StackBar.tsx";
-import StockChart from "~/components/FinancialData/StockChart.tsx";
 
 export function Dashboard() {
 
@@ -56,7 +54,7 @@ export function Dashboard() {
                             </CardDescription>
                         </CardHeader>
                     </Card>
-                    <Card className="" x-chunk="dashboard-05-chunk-3">
+                    <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
                         <CardHeader className="px-7">
                             <CardTitle>Trend In Tourism</CardTitle>
                             <CardDescription>
@@ -68,19 +66,19 @@ export function Dashboard() {
                         </CardContent>
                     </Card>
 
-                    <Card className="" x-chunk="dashboard-05-chunk-3">
-                        <CardHeader className="px-7">
-                            <CardTitle>India Ranking</CardTitle>
-                            <CardDescription>
-                                Ranking of India
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <CardContent className="p-6 text-sm">
-                                <BarGraphMain />
-                            </CardContent>
-                        </CardContent>
-                    </Card>
+                    {/*<Card className="" x-chunk="dashboard-05-chunk-3">*/}
+                    {/*    <CardHeader className="px-7">*/}
+                    {/*        <CardTitle>India Ranking</CardTitle>*/}
+                    {/*        <CardDescription>*/}
+                    {/*            Ranking of India*/}
+                    {/*        </CardDescription>*/}
+                    {/*    </CardHeader>*/}
+                    {/*    <CardContent>*/}
+                    {/*        <CardContent className="p-6 text-sm">*/}
+                    {/*            <BarGraphMain />*/}
+                    {/*        </CardContent>*/}
+                    {/*    </CardContent>*/}
+                    {/*</Card>*/}
                     <div className="grid auto-rows-max items-start gap-4 md:gap-8 lg:col-span-2">
                         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
                             <Card className="sm:col-span-6" x-chunk="dashboard-05-chunk-0">
