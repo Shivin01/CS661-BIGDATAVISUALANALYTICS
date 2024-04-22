@@ -1,7 +1,7 @@
 import React from 'react';
 import {LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer} from 'recharts';
 import {useTheme} from "~/provider/theme.tsx";
-import data from "~/components/GenderDashboard/output5_updated.json";
+import data from "~/components/GenderDashboard/Data/output5_updated.json";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "~/components/ui/card.tsx";
 import {
     Select,
@@ -13,7 +13,7 @@ import {
     SelectValue
 } from "~/components/ui/select.tsx";
 
-const LineGraphComponent = (country) => {
+export function LineGraphComponent(country)  {
     // Extracting the data for the specified year and formatting for the chart
 
     const {theme: mode} = useTheme()

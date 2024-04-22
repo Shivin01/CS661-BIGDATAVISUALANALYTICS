@@ -9,7 +9,9 @@ import {Dashboard} from "~/components/Dashboards/dashboard.tsx";
 import {TooltipProvider} from "~/components/ui/tooltip.tsx";
 import {ThemeProvider} from "./provider/theme";
 import Sidebar from "~/components/sidebar.tsx";
-import {DashboardGender} from "~/components/Dashboards/dashboardGender.tsx";
+import {DashboardFTA} from "~/components/Dashboards/dashboardFTA.tsx";
+import {DashboadIndia} from "~/components/Dashboards/dashboardIndia.tsx";
+import {CompareDashboardFTA} from "~/components/Dashboards/CompareFTA.tsx";
 
 
 
@@ -30,13 +32,13 @@ function App() {
                             element: <Dashboard/>,
                         },
                         {
-                            path: '/gender',
-                            element: <DashboardGender/>
+                            path: '/exploreFta',
+                            element: <DashboardFTA/>
 
                         },
                         {
-                            path: '/world',
-                            element: <WorldMap/>,
+                            path: '/exploreIndia',
+                            element: <DashboadIndia />,
                         },
                         {
                             path: '/piechart',
@@ -49,6 +51,10 @@ function App() {
                         {
                             path: '/stackedBarChart',
                             element: <StackedBarChart/>
+                        },
+                        {
+                            path: '/compareFTA',
+                            element: <CompareDashboardFTA/>
                         }
                     ]
                 },

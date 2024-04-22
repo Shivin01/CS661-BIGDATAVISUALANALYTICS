@@ -6,11 +6,11 @@ import {
 import {
     Card,
     CardContent,
-    CardDescription,
+    CardDescription, CardFooter,
     CardHeader,
     CardTitle,
 } from "~/components/ui/card"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList} from "~/components/ui/breadcrumb.tsx";
 import {Slider} from "~/components/ui/slider"
 import React from "react";
@@ -18,10 +18,12 @@ import LineGraphComponent, {GenderWiseGraph} from "~/components/GenderDashboard/
 import {MonthWiseGraph} from "~/components/GenderDashboard/MonthWiseGraph.tsx";
 import {QuarterWiseData, quarterWiseData} from "~/components/GenderDashboard/quarterWiseData.tsx";
 import {AgeGroup} from "~/components/GenderDashboard/AgeGroupGraphs.tsx";
+import {PurposeOfVisitGraph} from "~/components/GenderDashboard/PurposeOfVisit.tsx";
+import {Button} from "~/components/ui/button.tsx";
 
 // import {cn} from "~/lib/utils.ts";
 
-export function DashboardGender() {
+export function DashboardFTA() {
     // type SliderProps = React.ComponentProps<typeof Slider>
 
     const [slider, setSlider] = React.useState<string[]>(['2001'])
@@ -33,6 +35,10 @@ export function DashboardGender() {
     const handleDragChange = (e) => {
         setdragSlider(e)
     }
+    const navigate = useNavigate();
+    const routeChange = () => {
+        navigate('../compareFTA');
+    }
 
     return (
         <div className="flex min-h-screen w-full flex-col bg-muted/40">
@@ -43,7 +49,7 @@ export function DashboardGender() {
                         <BreadcrumbList>
                             <BreadcrumbItem>
                                 <BreadcrumbLink asChild>
-                                    <Link to="#">Dashboard</Link>
+                                    <Link to="/">Dashboard</Link>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                         </BreadcrumbList>
@@ -168,7 +174,7 @@ export function DashboardGender() {
                         <Card
                             className="xl:col-span-2" x-chunk="dashboard-01-chunk-4"
                         >
-                            <AgeGroup />
+                            <AgeGroup/>
                         </Card>
                         <Card x-chunk="dashboard-01-chunk-5">
                             <CardHeader>
@@ -213,13 +219,75 @@ export function DashboardGender() {
                                 </div>
                             </CardContent>
                         </Card>
+                    </div>
 
-
+                    <div className="grid gap-4 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
+                        <Card
+                            className="xl:col-span-2" x-chunk="dashboard-01-chunk-4"
+                        >
+                            <PurposeOfVisitGraph/>
+                        </Card>
+                        <Card x-chunk="dashboard-01-chunk-5">
+                            <CardHeader>
+                                <CardTitle>Over All</CardTitle>
+                            </CardHeader>
+                            <CardContent className="grid gap-8">
+                                <div className="flex items-center gap-4">
+                                    <Avatar className="hidden h-9 w-9 sm:flex">
+                                        <AvatarImage src="/avatars/01.png" alt="Avatar"/>
+                                        <AvatarFallback>M</AvatarFallback>
+                                    </Avatar>
+                                    <div className="grid gap-1">
+                                        <p className="text-sm font-medium leading-none">
+                                            Male
+                                        </p>
+                                    </div>
+                                    <div className="ml-auto font-medium">1000</div>
+                                </div>
+                                <div className="flex items-center gap-4">
+                                    <Avatar className="hidden h-9 w-9 sm:flex">
+                                        <AvatarImage src="/avatars/02.png" alt="Avatar"/>
+                                        <AvatarFallback>F</AvatarFallback>
+                                    </Avatar>
+                                    <div className="grid gap-1">
+                                        <p className="text-sm font-medium leading-none">
+                                            Female
+                                        </p>
+                                    </div>
+                                    <div className="ml-auto font-medium">1000</div>
+                                </div>
+                                <div className="flex items-center gap-4">
+                                    <Avatar className="hidden h-9 w-9 sm:flex">
+                                        <AvatarImage src="/avatars/03.png" alt="Avatar"/>
+                                        <AvatarFallback>NA</AvatarFallback>
+                                    </Avatar>
+                                    <div className="grid gap-1">
+                                        <p className="text-sm font-medium leading-none">
+                                            Not Responded
+                                        </p>
+                                    </div>
+                                    <div className="ml-auto font-medium">1000</div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                    <div className="grid auto-rows-max items-start gap-4 md:gap-8 lg:col-span-2">
+                        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
+                            <Card className="sm:col-span-6" x-chunk="dashboard-05-chunk-0">
+                                <CardHeader className="pb-3">
+                                    <CardTitle>Explore</CardTitle>
+                                    <CardDescription className="leading-relaxed">
+                                        Get More In Depth Information of these data points.
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardFooter>
+                                    <Button onClick={routeChange}>Explore</Button>
+                                </CardFooter>
+                            </Card>
+                        </div>
                     </div>
 
                 </div>
-
-
             </div>
         </div>
     )

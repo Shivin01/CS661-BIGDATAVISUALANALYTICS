@@ -1,11 +1,11 @@
 import React from 'react';
 import {
+    XAxis,
+    YAxis,
     ResponsiveContainer,
-    RadarChart,
-    PolarGrid,
-    PolarAngleAxis, Radar, PolarRadiusAxis, Legend
+    BarChart, Bar, Tooltip
 } from 'recharts';
-import data from "~/components/GenderDashboard/Data/output6_updated.json";
+import data from "~/components/GenderDashboard/Data/output8.json";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "~/components/ui/card.tsx";
 import {
     Select,
@@ -17,30 +17,55 @@ import {
     SelectValue
 } from "~/components/ui/select.tsx";
 
-export function AgeGraph(country) {
+export function PurposeOfVisit(country) {
     // Extracting the data for the specified year and formatting for the chart
 
-    const countryData = data.filter((d) => d.Country.toUpperCase() === country.country)
+    const countryData = data.filter((d) => d.Country.toUpperCase() === country.country).map(item => {
+        return {
+            "Year": item.Year,
+            "BusinessandProfessional": item.BusinessandProfessional,
+            "LeisureHolidayandRecreation": item.BusinessandProfessional,
+            "Medical": item.Medical,
+            "IndianDiaspora": item.IndianDiaspora,
+            "Others": item.Others
+
+        }
+    })
 
     console.log(countryData);
 
 
     return (
         <ResponsiveContainer width="100%" height={350}>
-            <RadarChart outerRadius={90} width={730} height={250} data={countryData}>
-                <PolarGrid/>
-                <PolarAngleAxis dataKey="subject"/>
-                <PolarRadiusAxis angle={30} domain={[0, 150]}/>
-                <Radar name="Mike" dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6}/>
-                <Radar name="Lily" dataKey="B" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6}/>
-                <Legend/>
-            </RadarChart>
+            <BarChart width={500} height={500} data={countryData}>
+                <XAxis
+                    dataKey="Year"
+                    stroke="#888888"
+                    fontSize={12}
+                    tickLine={false}
+                    axisLine={false}/>
+                <YAxis
+                    stroke="#888888"
+                    fontSize={12}
+                    tickLine={false}
+                    axisLine={false}
+                />
+                <Tooltip cursor={{fill: 'currentColor'}}/>
+                <Bar dataKey="BusinessandProfessional" stackId="a" fill="currentColor" radius={[4, 4, 0, 0]}
+                     className="fill-primary"/>
+                <Bar dataKey="LeisureHolidayandRecreation" stackId="a" fill="#FF4433" radius={[4, 4, 0, 0]}
+                     className="#FF4433"/>
+                <Bar dataKey="Medical" stackId="a" fill="#FFE5B4" radius={[4, 4, 0, 0]} className="#FFE5B4"/>
+                <Bar dataKey="IndianDiaspora" stackId="a" fill="secondaryColor" radius={[4, 4, 0, 0]}
+                     className="secondaryColor"/>
+                <Bar dataKey="Others" stackId="a" fill="currentColor" radius={[4, 4, 0, 0]} className="fill-primary"/>
+            </BarChart>
         </ResponsiveContainer>
     );
 };
 
 
-export function AgeGroup() {
+export function PurposeOfVisitGraph() {
 
     const [countrySelected, setCountrySelected] = React.useState<string>("UNITED STATES OF AMERICA");
     const countries = Array.from(new Set(data.map((d) => {
@@ -71,6 +96,7 @@ export function AgeGroup() {
             </CardHeader>
             <CardContent>
                 <CardContent className="p-6 text-sm">
+                    <PurposeOfVisit country={countrySelected}/>
                     {/*<AgeGraph country={countrySelected}/>*/}
                     {/*<LineGraphComponent country={countrySelected}/>*/}
                 </CardContent>

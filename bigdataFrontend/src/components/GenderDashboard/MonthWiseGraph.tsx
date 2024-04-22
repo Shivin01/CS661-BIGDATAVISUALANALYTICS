@@ -18,7 +18,7 @@ import {
     CardHeader,
     CardTitle,
 } from "~/components/ui/card.tsx"
-import data from "~/components/GenderDashboard/output1.json";
+import data from "~/components/GenderDashboard/Data/output1.json";
 
 import {Bar, BarChart, ResponsiveContainer, XAxis, YAxis} from "recharts";
 
