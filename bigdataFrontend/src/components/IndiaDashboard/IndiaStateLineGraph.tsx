@@ -1,7 +1,7 @@
 import React from 'react';
 import {LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer} from 'recharts';
 import {useTheme} from "~/provider/theme.tsx";
-import data from "~/components/GenderDashboard/Data/output5_updated.json";
+import data from './Data/StateWiseJSON.json';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "~/components/ui/card.tsx";
 import {
     Select,
@@ -12,57 +12,9 @@ import {
     SelectTrigger,
     SelectValue
 } from "~/components/ui/select.tsx";
-import {Avatar, AvatarFallback, AvatarImage} from "~/components/ui/avatar.tsx";
-import {Progress} from "~/components/ui/progress.tsx";
 
-const RightComponent = (country) => {
 
-    const countryData = data.filter((d) => d.Country.toUpperCase() === country.country.toUpperCase()).reduce((acc, item) => {
-        const maleCount = (item.Male * item.Arrival) / 100;
-        const femaleCount = (item.Female * item.Arrival) / 100;
-
-        acc.totalArrival += item.Arrival;
-        acc.totalMale += maleCount;
-        acc.totalFemale += femaleCount;
-
-        return acc;
-    }, {totalArrival: 0, totalMale: 0, totalFemale: 0});
-
-    // console.log(countryData);
-
-    const finalCountryData = {
-        'Total Arrival': countryData.totalArrival,
-        'Male': countryData.totalMale,
-        'Female': countryData.totalFemale
-    }
-
-    console.log(finalCountryData);
-
-    return (
-        <> {Object.keys(finalCountryData).map((item) => {
-            return (
-                <div className="flex items-center gap-4">
-                    <Avatar className="hidden h-9 w-9 sm:flex">
-                        <AvatarImage src="/avatars/01.png" alt="Avatar"/>
-                        <AvatarFallback>{item[0]}</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                        <p className="text-sm font-medium leading-none">
-                            {item}
-                        </p>
-                    </div>
-                    <Progress value={ (finalCountryData[item].toFixed(2) / finalCountryData['Total Arrival'].toFixed(2)) * 100 } />
-                    <div className="ml-auto font-medium">{finalCountryData[item].toFixed(2)}</div>
-                </div>
-            )
-        })}
-
-        </>
-    )
-
-}
-
-export function LineGraphComponent(country) {
+export function LineGraphComponent(state) {
     // Extracting the data for the specified year and formatting for the chart
 
     const {theme: mode} = useTheme()
@@ -121,20 +73,38 @@ export function LineGraphComponent(country) {
         },
     }
 
-    const countryData = data.filter((d) => d.Country.toUpperCase() === country.country).map((item) => {
-        return {
-            year: item.Year,
-            Arrival: item.Arrival,
-            Male: item.Male,
-            Female: item.Female,
+    // const stateData = []
+    const stateData = data.filter((d) => d["States/UTs"].toUpperCase() === state.state)
+    console.log('stateData', stateData)
+    const r = [];
+    function getDataYearWise(data) {
+        const result = {};
+        for (const key in data) {
+            if (key.includes('-')) {
+                const [year, type] = key.split('-');
+                if (!result[year]) {
+                    result[year] = { DTV: {}, FTV: {}, year: year}
+                }
+                result[year][type] = parseInt(data[key]);
+            }
         }
-    })
+        return result;
+    }
 
-    console.log(countryData)
+
+
+
+    const yearWiseData = getDataYearWise(stateData[0]);
+    let yearWiseDataFinal = [];
+    for (const i in yearWiseData) {
+        yearWiseDataFinal.push(yearWiseData[i])
+
+    }
+    console.log(yearWiseDataFinal);
 
     return (
         <ResponsiveContainer width="100%" height={350}>
-            <LineChart width={730} height={250} data={countryData}
+            <LineChart width={730} height={250} data={yearWiseDataFinal}
                        margin={{top: 5, right: 30, left: 20, bottom: 5}}>
                 <XAxis dataKey="year"/>
                 <YAxis/>
@@ -146,7 +116,7 @@ export function LineGraphComponent(country) {
                                     <div className="grid grid-cols-2 gap-2">
                                         <div className="flex flex-col">
                             <span className="text-[0.70rem] uppercase text-muted-foreground">
-                              Male
+                              DTV
                             </span>
                                             <span className="font-bold text-muted-foreground">
                               {payload[0].value}
@@ -154,7 +124,7 @@ export function LineGraphComponent(country) {
                                         </div>
                                         <div className="flex flex-col">
                             <span className="text-[0.70rem] uppercase text-muted-foreground">
-                              Femal
+                              FTV
                             </span>
                                             <span className="font-bold">
                               {payload[1].value}
@@ -171,7 +141,7 @@ export function LineGraphComponent(country) {
                 <Line
                     type="monotone"
                     strokeWidth={2}
-                    dataKey="Male"
+                    dataKey="DTV"
                     activeDot={{
                         r: 6,
                         style: {fill: "var(--theme-primary)", opacity: 0.25},
@@ -188,7 +158,7 @@ export function LineGraphComponent(country) {
                 />
                 <Line
                     type="monotone"
-                    dataKey="Female"
+                    dataKey="FTV"
                     strokeWidth={2}
                     activeDot={{
                         r: 8,
@@ -227,79 +197,39 @@ export function LineGraphComponent(country) {
 };
 
 
-export function GenderWiseGraph() {
+export function StateWiseGraph() {
 
-    const [countrySelected, setCountrySelected] = React.useState<string>("UNITED STATES OF AMERICA");
-    const countries = Array.from(new Set(data.map((d) => {
-        return d.Country.toUpperCase()
+    const [stateSelected, setStateSelected] = React.useState<string>("UTTAR PRADESH");
+    const states = Array.from(new Set(data.map((d) => {
+        return d["States/UTs"].toUpperCase()
     }))).sort();
     const handleSelect = (e) => {
-        setCountrySelected(e)
+        setStateSelected(e)
     }
 
     return (
         <>
-            <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
-                <Card className="" x-chunk="dashboard-05-chunk-3">
-                    <CardHeader className="px-7">
-                        <CardTitle></CardTitle>
-                        <CardDescription>
-                            <Select onValueChange={handleSelect} defaultValue={'UNITED STATES OF AMERICA'}>
-                                <SelectTrigger className="w-[180px]">
-                                    <SelectValue placeholder="Select a Country"/>
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectGroup>
-                                        <SelectLabel>Months</SelectLabel>
-                                        {countries.map(item => <SelectItem key={item} value={item}>{item}</SelectItem>)}
-                                    </SelectGroup>
-                                </SelectContent>
-                            </Select>
-                        </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <CardContent className="p-6 text-sm">
-                            <LineGraphComponent country={countrySelected}/>
-                        </CardContent>
-                    </CardContent>
-                </Card>
-            </Card>
-
-            <Card x-chunk="dashboard-01-chunk-5">
-                <CardHeader>
-                    <CardTitle>Over All</CardTitle>
-                </CardHeader>
-                <CardContent className="grid gap-8">
-
-                    <RightComponent country={countrySelected}/>
-                    {/*<div className="flex items-center gap-4">*/}
-                    {/*    <Avatar className="hidden h-9 w-9 sm:flex">*/}
-                    {/*        <AvatarImage src="/avatars/02.png" alt="Avatar"/>*/}
-                    {/*        <AvatarFallback>F</AvatarFallback>*/}
-                    {/*    </Avatar>*/}
-                    {/*    <div className="grid gap-1">*/}
-                    {/*        <p className="text-sm font-medium leading-none">*/}
-                    {/*            Female*/}
-                    {/*        </p>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="ml-auto font-medium">1000</div>*/}
-                    {/*</div>*/}
-                    {/*<div className="flex items-center gap-4">*/}
-                    {/*    <Avatar className="hidden h-9 w-9 sm:flex">*/}
-                    {/*        <AvatarImage src="/avatars/03.png" alt="Avatar"/>*/}
-                    {/*        <AvatarFallback>NA</AvatarFallback>*/}
-                    {/*    </Avatar>*/}
-                    {/*    <div className="grid gap-1">*/}
-                    {/*        <p className="text-sm font-medium leading-none">*/}
-                    {/*            Not Responded*/}
-                    {/*        </p>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="ml-auto font-medium">1000</div>*/}
-                    {/*</div>*/}
+            <CardHeader className="px-7">
+                <CardTitle></CardTitle>
+                <CardDescription>
+                    <Select onValueChange={handleSelect} defaultValue={stateSelected}>
+                        <SelectTrigger className="w-[180px]">
+                            <SelectValue placeholder="Select a Country"/>
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectGroup>
+                                <SelectLabel>Months</SelectLabel>
+                                {states.map(item => <SelectItem key={item} value={item}>{item}</SelectItem>)}
+                            </SelectGroup>
+                        </SelectContent>
+                    </Select>
+                </CardDescription>
+            </CardHeader>
+            <CardContent>
+                <CardContent className="p-6 text-sm">
+                    <LineGraphComponent state={stateSelected}/>
                 </CardContent>
-            </Card>
+            </CardContent>
         </>
     )
 }
-
-// export default LineGraphComponent;

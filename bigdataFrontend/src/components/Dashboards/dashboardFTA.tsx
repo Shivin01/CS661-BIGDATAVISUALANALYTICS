@@ -55,52 +55,10 @@ export function DashboardFTA() {
                     </div>
 
                     <div className="grid gap-4 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
-                        <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
+
                             <GenderWiseGraph/>
-                        </Card>
-                        <Card x-chunk="dashboard-01-chunk-5">
-                            <CardHeader>
-                                <CardTitle>Over All</CardTitle>
-                            </CardHeader>
-                            <CardContent className="grid gap-8">
-                                <div className="flex items-center gap-4">
-                                    <Avatar className="hidden h-9 w-9 sm:flex">
-                                        <AvatarImage src="/avatars/01.png" alt="Avatar"/>
-                                        <AvatarFallback>M</AvatarFallback>
-                                    </Avatar>
-                                    <div className="grid gap-1">
-                                        <p className="text-sm font-medium leading-none">
-                                            Male
-                                        </p>
-                                    </div>
-                                    <div className="ml-auto font-medium">1000</div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <Avatar className="hidden h-9 w-9 sm:flex">
-                                        <AvatarImage src="/avatars/02.png" alt="Avatar"/>
-                                        <AvatarFallback>F</AvatarFallback>
-                                    </Avatar>
-                                    <div className="grid gap-1">
-                                        <p className="text-sm font-medium leading-none">
-                                            Female
-                                        </p>
-                                    </div>
-                                    <div className="ml-auto font-medium">1000</div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <Avatar className="hidden h-9 w-9 sm:flex">
-                                        <AvatarImage src="/avatars/03.png" alt="Avatar"/>
-                                        <AvatarFallback>NA</AvatarFallback>
-                                    </Avatar>
-                                    <div className="grid gap-1">
-                                        <p className="text-sm font-medium leading-none">
-                                            Not Responded
-                                        </p>
-                                    </div>
-                                    <div className="ml-auto font-medium">1000</div>
-                                </div>
-                            </CardContent>
-                        </Card>
+
+
                     </div>
 
                     <div className="grid gap-4 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">

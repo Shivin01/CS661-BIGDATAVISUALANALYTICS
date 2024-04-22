@@ -80,7 +80,6 @@ function App() {
 }
 
 function Layout() {
-
     return <Sidebar/>;
 }
 
