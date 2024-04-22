@@ -63,13 +63,9 @@ const WorldMap = () => {
             })
 
             num = num + 5
-            console.log(num);
         }
-        console.log(framesData)
-        console.log(sliderStepsData)
         setFrames(framesData)
         setSliderSteps(sliderStepsData)
-        console.log(frames[0]?.data[0]?.z)
     }
 
 

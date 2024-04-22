@@ -1,6 +1,6 @@
 import {Avatar, AvatarFallback, AvatarImage} from "~/components/ui/avatar.tsx";
 import React from "react";
-import data from "~/components/GenderDashboard/output1.json";
+import data from "~/components/GenderDashboard/Data/output1.json";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "~/components/ui/card.tsx";
 import {
     Select,

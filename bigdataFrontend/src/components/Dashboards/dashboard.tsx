@@ -15,15 +15,13 @@ import {
 } from "~/components/ui/card.tsx"
 import {Link, useNavigate} from "react-router-dom";
 import WorldMap from "~/components/MainDashboard/worldmap.tsx";
-import {Bar, BarChart, ResponsiveContainer, XAxis, YAxis} from "recharts"
-import {Progress} from "~/components/ui/progress.tsx";
 import BarGraphMain from "~/components/MainDashboard/BarGraphMain.tsx";
 
 export function Dashboard() {
 
     const navigate = useNavigate();
     const routeChange = () => {
-        navigate('../gender');
+        navigate('../exploreFta');
     }
 
     return (
@@ -85,38 +83,13 @@ export function Dashboard() {
                         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
                             <Card className="sm:col-span-6" x-chunk="dashboard-05-chunk-0">
                                 <CardHeader className="pb-3">
-                                    <CardTitle>Gender Based Information</CardTitle>
+                                    <CardTitle>Explore</CardTitle>
                                     <CardDescription className="leading-relaxed">
-                                        Introducing Our Dynamic Orders Dashboard for Seamless
-                                        Management and Insightful Analysis.
+                                        Get More In Depth Information of these data points.
                                     </CardDescription>
                                 </CardHeader>
                                 <CardFooter>
-                                    <Button onClick={routeChange}>Create New Order</Button>
-                                </CardFooter>
-                            </Card>
-                            <Card className="sm:col-span-6" x-chunk="dashboard-05-chunk-0">
-                                <CardHeader className="pb-3">
-                                    <CardTitle>Purpose of Visit</CardTitle>
-                                    <CardDescription className="leading-relaxed">
-                                        Introducing Our Dynamic Orders Dashboard for Seamless
-                                        Management and Insightful Analysis.
-                                    </CardDescription>
-                                </CardHeader>
-                                <CardFooter>
-                                    <Button>Create New Order</Button>
-                                </CardFooter>
-                            </Card>
-                            <Card className="sm:col-span-6" x-chunk="dashboard-05-chunk-0">
-                                <CardHeader className="pb-3">
-                                    <CardTitle>Purpose of Visit</CardTitle>
-                                    <CardDescription className="leading-relaxed">
-                                        Introducing Our Dynamic Orders Dashboard for Seamless
-                                        Management and Insightful Analysis.
-                                    </CardDescription>
-                                </CardHeader>
-                                <CardFooter>
-                                    <Button>Create New Order</Button>
+                                    <Button onClick={routeChange}>Explore</Button>
                                 </CardFooter>
                             </Card>
                         </div>
