@@ -41,22 +41,22 @@ export function QuarterWiseData() {
 
     let finalData = [
         {
-            name: "Quarter 1",
+            name: "Q1",
             target: 1,
             value: q1
         },
         {
-            name: "Quarter 2",
+            name: "Q2",
             target: 2,
             value: q2
         },
         {
-            name: "Quarter 3",
+            name: "Q3",
             target: 3,
             value: q3
         },
         {
-            name: "Quarter 4",
+            name: "Q4",
             target: 4,
             value: q4
         }
@@ -85,22 +85,22 @@ export function QuarterWiseData() {
 
         return [
             {
-                name: "Quarter 1",
+                name: "Q1",
                 target: 1,
                 value: q1
             },
             {
-                name: "Quarter 2",
+                name: "Q2",
                 target: 2,
                 value: q2
             },
             {
-                name: "Quarter 3",
+                name: "Q3",
                 target: 3,
                 value: q3
             },
             {
-                name: "Quarter 4",
+                name: "Q4",
                 target: 4,
                 value: q4
             }
