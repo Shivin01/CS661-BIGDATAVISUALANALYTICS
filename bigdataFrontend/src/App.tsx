@@ -12,6 +12,7 @@ import Sidebar from "~/components/sidebar.tsx";
 import {DashboardGender} from "~/components/Dashboards/dashboardGender.tsx";
 
 
+
 function App() {
 
     const queryClient = new QueryClient()

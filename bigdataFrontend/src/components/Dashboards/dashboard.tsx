@@ -18,6 +18,8 @@ import WorldMap from "~/components/MainDashboard/worldmap.tsx";
 import {Bar, BarChart, ResponsiveContainer, XAxis, YAxis} from "recharts"
 import {Progress} from "~/components/ui/progress.tsx";
 import BarGraphMain from "~/components/MainDashboard/BarGraphMain.tsx";
+import StackBar from "~/components/FinancialData/StackBar.tsx";
+import StockChart from "~/components/FinancialData/StockChart.tsx";
 
 export function Dashboard() {
 
