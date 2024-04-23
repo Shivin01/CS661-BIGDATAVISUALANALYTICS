@@ -1,5 +1,5 @@
 import React from 'react';
-import {LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer} from 'recharts';
+import {LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend} from 'recharts';
 import {useTheme} from "~/provider/theme.tsx";
 import data from "~/components/GenderDashboard/Data/output5_updated.json";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "~/components/ui/card.tsx";
@@ -35,8 +35,6 @@ const RightComponent = (country) => {
         'Male': countryData.totalMale,
         'Female': countryData.totalFemale
     }
-
-    console.log(finalCountryData);
 
     return (
         <> {Object.keys(finalCountryData).map((item) => {
@@ -130,11 +128,9 @@ export function LineGraphComponent(country) {
         }
     })
 
-    console.log(countryData)
-
     return (
         <ResponsiveContainer width="100%" height={350}>
-            <LineChart width={730} height={250} data={countryData}
+            <LineChart width={730} height={250} data={countryData.reverse()}
                        margin={{top: 5, right: 30, left: 20, bottom: 5}}>
                 <XAxis dataKey="year"/>
                 <YAxis/>
@@ -154,7 +150,7 @@ export function LineGraphComponent(country) {
                                         </div>
                                         <div className="flex flex-col">
                             <span className="text-[0.70rem] uppercase text-muted-foreground">
-                              Femal
+                              Female
                             </span>
                                             <span className="font-bold">
                               {payload[1].value}
@@ -167,18 +163,18 @@ export function LineGraphComponent(country) {
                         return null
                     }}
                 />
-                {/*<Legend/>*/}
+                <Legend />
                 <Line
                     type="monotone"
                     strokeWidth={2}
+                    stroke='#008DDA'
                     dataKey="Male"
                     activeDot={{
                         r: 6,
-                        style: {fill: "var(--theme-primary)", opacity: 0.25},
+                        style: {fill: "var(--theme-primary)", opacity: 0.55},
                     }}
                     style={
                         {
-                            stroke: "var(--theme-primary)",
                             opacity: 0.55,
                             "--theme-primary": `hsl(${
                                 theme?.cssVars[mode === "dark" ? "dark" : "light"].primary
@@ -190,36 +186,11 @@ export function LineGraphComponent(country) {
                     type="monotone"
                     dataKey="Female"
                     strokeWidth={2}
+                    stroke='#874CCC'
                     activeDot={{
                         r: 8,
                         style: {fill: "var(--theme-primary)"},
                     }}
-                    style={
-                        {
-                            stroke: "var(--theme-primary)",
-                            "--theme-primary": `hsl(${
-                                theme?.cssVars[mode === "dark" ? "dark" : "light"].primary
-                            })`,
-                        } as React.CSSProperties
-                    }
-                />
-                <Line
-                    type="monotone"
-                    strokeWidth={2}
-                    dataKey="Not Reported"
-                    activeDot={{
-                        r: 6,
-                        style: {fill: "var(--theme-primary)", opacity: 0.25},
-                    }}
-                    style={
-                        {
-                            stroke: "var(--theme-primary)",
-                            opacity: 0.25,
-                            "--theme-primary": `hsl(${
-                                theme?.cssVars[mode === "dark" ? "dark" : "light"].primary
-                            })`,
-                        } as React.CSSProperties
-                    }
                 />
             </LineChart>
         </ResponsiveContainer>
@@ -242,8 +213,9 @@ export function GenderWiseGraph() {
             <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
                 <Card className="" x-chunk="dashboard-05-chunk-3">
                     <CardHeader className="px-7">
-                        <CardTitle></CardTitle>
+                        <CardTitle>Gender Wise Distribution of Tourists</CardTitle>
                         <CardDescription>
+                            <br/>
                             <Select onValueChange={handleSelect} defaultValue={'UNITED STATES OF AMERICA'}>
                                 <SelectTrigger className="w-[180px]">
                                     <SelectValue placeholder="Select a Country"/>
@@ -267,39 +239,12 @@ export function GenderWiseGraph() {
 
             <Card x-chunk="dashboard-01-chunk-5">
                 <CardHeader>
-                    <CardTitle>Over All</CardTitle>
+                    <CardTitle>OverView</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-8">
-
                     <RightComponent country={countrySelected}/>
-                    {/*<div className="flex items-center gap-4">*/}
-                    {/*    <Avatar className="hidden h-9 w-9 sm:flex">*/}
-                    {/*        <AvatarImage src="/avatars/02.png" alt="Avatar"/>*/}
-                    {/*        <AvatarFallback>F</AvatarFallback>*/}
-                    {/*    </Avatar>*/}
-                    {/*    <div className="grid gap-1">*/}
-                    {/*        <p className="text-sm font-medium leading-none">*/}
-                    {/*            Female*/}
-                    {/*        </p>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="ml-auto font-medium">1000</div>*/}
-                    {/*</div>*/}
-                    {/*<div className="flex items-center gap-4">*/}
-                    {/*    <Avatar className="hidden h-9 w-9 sm:flex">*/}
-                    {/*        <AvatarImage src="/avatars/03.png" alt="Avatar"/>*/}
-                    {/*        <AvatarFallback>NA</AvatarFallback>*/}
-                    {/*    </Avatar>*/}
-                    {/*    <div className="grid gap-1">*/}
-                    {/*        <p className="text-sm font-medium leading-none">*/}
-                    {/*            Not Responded*/}
-                    {/*        </p>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="ml-auto font-medium">1000</div>*/}
-                    {/*</div>*/}
                 </CardContent>
             </Card>
         </>
     )
 }
-
-// export default LineGraphComponent;

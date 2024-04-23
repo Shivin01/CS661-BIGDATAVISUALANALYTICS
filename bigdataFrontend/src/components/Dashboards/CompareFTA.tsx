@@ -4,7 +4,6 @@ import {
     BreadcrumbLink,
     BreadcrumbList,
 } from "~/components/ui/breadcrumb.tsx"
-import {Button} from "~/components/ui/button.tsx"
 import {
     Card,
     CardContent,
@@ -14,9 +13,7 @@ import {
     CardTitle,
 } from "~/components/ui/card.tsx"
 import {Link, useNavigate} from "react-router-dom";
-import WorldMap from "~/components/MainDashboard/worldmap.tsx";
-import BarGraphMain from "~/components/MainDashboard/BarGraphMain.tsx";
-import data from "~/components/GenderDashboard/Data/output8.json";
+import data from "~/components/GenderDashboard/Data/output8_updated.json";
 import {
     Select,
     SelectContent,
@@ -27,35 +24,19 @@ import {
     SelectValue
 } from "~/components/ui/select.tsx";
 import React from "react";
-import {MonthWiseGraph} from "~/components/GenderDashboard/MonthWiseGraph.tsx";
-import {GenderWiseGraph, LineGraphComponent} from "~/components/GenderDashboard/GenderBarGraph.tsx";
+import {LineGraphComponent} from "~/components/GenderDashboard/GenderBarGraph.tsx";
 import {AgeGraph} from "~/components/GenderDashboard/AgeGroupGraphs.tsx";
 import {PurposeOfVisit} from "~/components/GenderDashboard/PurposeOfVisit.tsx";
 
 export function CompareDashboardFTA() {
 
     const navigate = useNavigate();
-    const routeChange = () => {
-        navigate('../exploreFta');
-    }
 
     const [countrySelected, setCountrySelected] = React.useState<string>("UNITED STATES OF AMERICA");
-    const [countrySelected2, setCountrySelected2] = React.useState<string>("UNITED STATES OF AMERICA");
+    const [countrySelected2, setCountrySelected2] = React.useState<string>("SPAIN");
     const countries = Array.from(new Set(data.map((d) => {
         return d.Country.toUpperCase()
     }))).sort();
-
-    // const countryData = data.filter((d) => d.Country.toUpperCase() === country.country).map(item => {
-    //     return {
-    //         "Year": item.Year,
-    //         "BusinessandProfessional": item.BusinessandProfessional,
-    //         "LeisureHolidayandRecreation": item.BusinessandProfessional,
-    //         "Medical": item.Medical,
-    //         "IndianDiaspora": item.IndianDiaspora,
-    //         "Others": item.Others
-    //
-    //     }
-    // })
 
     const handleSelect = (e) => {
         setCountrySelected(e)
@@ -76,7 +57,7 @@ export function CompareDashboardFTA() {
                         <BreadcrumbList>
                             <BreadcrumbItem>
                                 <BreadcrumbLink asChild>
-                                    <Link to="#">Dashboard</Link>
+                                    <Link to="../exploreFta">Dashboard</Link>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                         </BreadcrumbList>
@@ -86,12 +67,13 @@ export function CompareDashboardFTA() {
                     className="grid flex-1 items-start gap-4 p-4 grid-cols-1 sm:px-6 sm:py-0 md:gap-6 lg:grid-cols-2 xl:grid-cols-2">
                     <Card x-chunk="dashboard-01-chunk-2">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Country 1</CardTitle>
+                            <CardTitle className="text-sm">Select First Country</CardTitle>
+                            <br/>
                         </CardHeader>
                         <CardContent>
-                            <Select onValueChange={handleSelect} defaultValue={'UNITED STATES OF AMERICA'}>
+                            <Select onValueChange={handleSelect} defaultValue={countrySelected}>
                                 <SelectTrigger className="w-[180px]">
-                                    <SelectValue placeholder="Select a Country"/>
+                                    <SelectValue placeholder="Select first Country"/>
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
@@ -104,12 +86,13 @@ export function CompareDashboardFTA() {
                     </Card>
                     <Card x-chunk="dashboard-01-chunk-3">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Active Now</CardTitle>
+                            <CardTitle className="text-sm">Select Second Country</CardTitle>
+                            <br/>
                         </CardHeader>
                         <CardContent>
-                            <Select onValueChange={handleSelect2} defaultValue={'UNITED STATES OF AMERICA'}>
+                            <Select onValueChange={handleSelect2} defaultValue={countrySelected2}>
                                 <SelectTrigger className="w-[180px]">
-                                    <SelectValue placeholder="Select a Country"/>
+                                    <SelectValue placeholder="Select second Country"/>
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
@@ -124,9 +107,9 @@ export function CompareDashboardFTA() {
                     {/*Line graph of Gender*/}
                     <Card className="" x-chunk="dashboard-05-chunk-3">
                         <CardHeader className="px-7">
-                            <CardTitle>Trend In Tourism</CardTitle>
+                            <CardTitle>Gender Wise Distribution of Tourists</CardTitle>
                             <CardDescription>
-                                Trends in Tourism from 1952 to 2007 ( Click on Play ).
+                                <br/>
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -136,9 +119,9 @@ export function CompareDashboardFTA() {
 
                     <Card className="" x-chunk="dashboard-05-chunk-3">
                         <CardHeader className="px-7">
-                            <CardTitle>India Ranking</CardTitle>
+                            <CardTitle>Gender Wise Distribution of Tourists</CardTitle>
                             <CardDescription>
-                                Ranking of India
+                                <br/>
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -151,9 +134,9 @@ export function CompareDashboardFTA() {
 
                     <Card className="" x-chunk="dashboard-05-chunk-3">
                         <CardHeader className="px-7">
-                            <CardTitle>Trend In Tourism</CardTitle>
+                            <CardTitle>Age Wise Distribution of Tourists</CardTitle>
                             <CardDescription>
-                                Trends in Tourism from 1952 to 2007 ( Click on Play ).
+                                <br/>
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -163,9 +146,9 @@ export function CompareDashboardFTA() {
 
                     <Card className="" x-chunk="dashboard-05-chunk-3">
                         <CardHeader className="px-7">
-                            <CardTitle>India Ranking</CardTitle>
+                            <CardTitle>Age Wise Distribution of Tourists</CardTitle>
                             <CardDescription>
-                                Ranking of India
+                                <br/>
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -178,10 +161,7 @@ export function CompareDashboardFTA() {
 
                     <Card className="" x-chunk="dashboard-05-chunk-3">
                         <CardHeader className="px-7">
-                            <CardTitle>Trend In Tourism</CardTitle>
-                            <CardDescription>
-                                Trends in Tourism from 1952 to 2007 ( Click on Play ).
-                            </CardDescription>
+                            <CardTitle>Purpose of visit</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <PurposeOfVisit country={countrySelected}/>
@@ -190,10 +170,7 @@ export function CompareDashboardFTA() {
 
                     <Card className="" x-chunk="dashboard-05-chunk-3">
                         <CardHeader className="px-7">
-                            <CardTitle>India Ranking</CardTitle>
-                            <CardDescription>
-                                Ranking of India
-                            </CardDescription>
+                            <CardTitle>Purpose of visit</CardTitle>
                         </CardHeader>
                         <CardContent>
 

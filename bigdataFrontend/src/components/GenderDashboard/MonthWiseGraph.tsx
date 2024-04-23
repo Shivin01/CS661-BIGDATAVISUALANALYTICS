@@ -20,10 +20,10 @@ import {
 } from "~/components/ui/card.tsx"
 import data from "~/components/GenderDashboard/Data/output1.json";
 
-import {Bar, BarChart, ResponsiveContainer, XAxis, YAxis} from "recharts";
+import {Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts";
 
 
-const BarGraph = (month: string) => {
+const BarGraphFTA = (month: string) => {
     // Extracting the data for the specified year and formatting for the chart
 
     const updatedData = Object.keys(data[month.month]).map(item => {
@@ -33,7 +33,6 @@ const BarGraph = (month: string) => {
         }
 
     })
-
 
     return (
         <ResponsiveContainer width="100%" height={350}>
@@ -58,6 +57,27 @@ const BarGraph = (month: string) => {
                     radius={[4, 4, 0, 0]}
                     className="fill-primary"
                 />
+                <Tooltip
+                    content={({active, payload}) => {
+                        if (active && payload && payload.length) {
+                            return (
+                                <div className="rounded-lg border bg-background p-2 shadow-sm">
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <div className="flex flex-col">
+                            <span className="text-[0.70rem] uppercase text-muted-foreground">
+                              FTA
+                            </span>
+                                            <span className="font-bold text-muted-foreground">
+                              {payload[0].value}
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                        return null
+                    }}
+                />
             </BarChart>
         </ResponsiveContainer>
     );
@@ -77,6 +97,7 @@ export function MonthWiseGraph() {
             <CardHeader className="px-7">
                 <CardTitle>FTA travel to India</CardTitle>
                 <CardDescription>
+                    <br/>
                     <Select onValueChange={handleSelect} defaultValue={'April'}>
                         <SelectTrigger className="w-[180px]">
                             <SelectValue placeholder="Select a Month"/>
@@ -92,7 +113,7 @@ export function MonthWiseGraph() {
             </CardHeader>
             <CardContent>
                 <CardContent className="p-6 text-sm">
-                    <BarGraph month={monthSelected}/>
+                    <BarGraphFTA month={monthSelected}/>
                 </CardContent>
             </CardContent>
         </Card>

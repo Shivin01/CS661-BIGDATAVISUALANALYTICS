@@ -123,8 +123,9 @@ export function QuarterWiseData() {
         <>
             <Card x-chunk="dashboard-01-chunk-5">
                 <CardHeader>
-                    <CardTitle>Over All</CardTitle>
+                    <CardTitle>Overview</CardTitle>
                     <CardDescription>
+                        <br/>
                         <Select onValueChange={handleSelect} defaultValue={'2005'}>
                             <SelectTrigger className="w-[180px]">
                                 <SelectValue placeholder="Select a Year"/>

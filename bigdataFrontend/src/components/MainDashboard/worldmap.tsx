@@ -85,7 +85,11 @@ const WorldMap = () => {
                     },
                 ]}
                 layout={{
+                    width: 1500, // Set the width of the chart
+                    height: 600, // Set the height of the chart
                     // title: 'Trend in Tourism',
+                    plot_bgcolor: 'transparent', // Set plot background color to transparent
+                    paper_bgcolor: 'transparent', // Set paper (canvas) background color to transparent
                     geo: {
                         scope: 'world',
                         countrycolor: 'rgb(255, 255, 255)',

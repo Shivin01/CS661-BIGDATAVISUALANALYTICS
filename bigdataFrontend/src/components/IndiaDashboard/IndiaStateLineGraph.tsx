@@ -1,5 +1,5 @@
 import React from 'react';
-import {LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer} from 'recharts';
+import {LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend} from 'recharts';
 import {useTheme} from "~/provider/theme.tsx";
 import data from './Data/StateWiseJSON.json';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "~/components/ui/card.tsx";
@@ -13,12 +13,11 @@ import {
     SelectValue
 } from "~/components/ui/select.tsx";
 
-
-export function LineGraphComponent(state) {
+export function LineGraphStateComponent(state) {
     // Extracting the data for the specified year and formatting for the chart
 
     const {theme: mode} = useTheme()
-    // const [config] = useConfig()
+
     const theme = {
         name: "zinc",
         label: "Zinc",
@@ -73,17 +72,15 @@ export function LineGraphComponent(state) {
         },
     }
 
-    // const stateData = []
-    const stateData = data.filter((d) => d["States/UTs"].toUpperCase() === state.state)
-    console.log('stateData', stateData)
-    const r = [];
+    const stateData = data.filter((d) => d["States/UTs"].toUpperCase().replaceAll(" ", "").replace(/[^a-zA-Z ]/g, "") === state.state.replaceAll(" ", "").replace(/[^a-zA-Z ]/g, ""))
+
     function getDataYearWise(data) {
         const result = {};
         for (const key in data) {
             if (key.includes('-')) {
                 const [year, type] = key.split('-');
                 if (!result[year]) {
-                    result[year] = { DTV: {}, FTV: {}, year: year}
+                    result[year] = {DTV: {}, FTV: {}, year: year}
                 }
                 result[year][type] = parseInt(data[key]);
             }
@@ -91,16 +88,12 @@ export function LineGraphComponent(state) {
         return result;
     }
 
-
-
-
     const yearWiseData = getDataYearWise(stateData[0]);
     let yearWiseDataFinal = [];
     for (const i in yearWiseData) {
         yearWiseDataFinal.push(yearWiseData[i])
 
     }
-    console.log(yearWiseDataFinal);
 
     return (
         <ResponsiveContainer width="100%" height={350}>
@@ -137,59 +130,26 @@ export function LineGraphComponent(state) {
                         return null
                     }}
                 />
-                {/*<Legend/>*/}
+                <Legend/>
                 <Line
                     type="monotone"
                     strokeWidth={2}
+                    stroke='#008DDA'
                     dataKey="DTV"
                     activeDot={{
                         r: 6,
                         style: {fill: "var(--theme-primary)", opacity: 0.25},
                     }}
-                    style={
-                        {
-                            stroke: "var(--theme-primary)",
-                            opacity: 0.55,
-                            "--theme-primary": `hsl(${
-                                theme?.cssVars[mode === "dark" ? "dark" : "light"].primary
-                            })`,
-                        } as React.CSSProperties
-                    }
                 />
                 <Line
                     type="monotone"
                     dataKey="FTV"
                     strokeWidth={2}
+                    stroke='#874CCC'
                     activeDot={{
                         r: 8,
                         style: {fill: "var(--theme-primary)"},
                     }}
-                    style={
-                        {
-                            stroke: "var(--theme-primary)",
-                            "--theme-primary": `hsl(${
-                                theme?.cssVars[mode === "dark" ? "dark" : "light"].primary
-                            })`,
-                        } as React.CSSProperties
-                    }
-                />
-                <Line
-                    type="monotone"
-                    strokeWidth={2}
-                    dataKey="Not Reported"
-                    activeDot={{
-                        r: 6,
-                        style: {fill: "var(--theme-primary)", opacity: 0.25},
-                    }}
-                    style={
-                        {
-                            stroke: "var(--theme-primary)",
-                            opacity: 0.25,
-                            "--theme-primary": `hsl(${
-                                theme?.cssVars[mode === "dark" ? "dark" : "light"].primary
-                            })`,
-                        } as React.CSSProperties
-                    }
                 />
             </LineChart>
         </ResponsiveContainer>
@@ -227,7 +187,7 @@ export function StateWiseGraph() {
             </CardHeader>
             <CardContent>
                 <CardContent className="p-6 text-sm">
-                    <LineGraphComponent state={stateSelected}/>
+                    <LineGraphStateComponent state={stateSelected}/>
                 </CardContent>
             </CardContent>
         </>

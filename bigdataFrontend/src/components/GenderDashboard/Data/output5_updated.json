@@ -2,7 +2,7 @@
     {
         "Year": "2021",
         "Continent": "North America",
-        "Country": "Canada",
+        "Country": "CANADA",
         "Arrival": 80437,
         "Male": 54.1,
         "Female": 45.9,
@@ -12,7 +12,7 @@
     {
         "Year": "2021",
         "Continent": "North America",
-        "Country": "United States Of America",
+        "Country": "UNITED STATES OF AMERICA",
         "Arrival": 429860,
         "Male": 54.0,
         "Female": 46.0,
@@ -22,7 +22,7 @@
     {
         "Year": "2021",
         "Continent": "Central and South America",
-        "Country": "Argentina",
+        "Country": "ARGENTINA",
         "Arrival": 530,
         "Male": 61.3,
         "Female": 38.7,
@@ -32,7 +32,7 @@
     {
         "Year": "2021",
         "Continent": "Central and South America",
-        "Country": "Brazil",
+        "Country": "BRAZIL",
         "Arrival": 2055,
         "Male": 64.9,
         "Female": 35.1,
@@ -42,7 +42,7 @@
     {
         "Year": "2021",
         "Continent": "Central and South America",
-        "Country": "Mexico",
+        "Country": "MEXICO",
         "Arrival": 859,
         "Male": 56.9,
         "Female": 43.1,
@@ -52,7 +52,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Austria",
+        "Country": "AUSTRIA",
         "Arrival": 4411,
         "Male": 61.5,
         "Female": 38.5,
@@ -62,7 +62,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Belgium",
+        "Country": "BELGIUM",
         "Arrival": 7382,
         "Male": 62.3,
         "Female": 37.7,
@@ -72,7 +72,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Denmark",
+        "Country": "DENMARK",
         "Arrival": 2025,
         "Male": 65.2,
         "Female": 34.8,
@@ -82,7 +82,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Finland",
+        "Country": "FINLAND",
         "Arrival": 1329,
         "Male": 56.3,
         "Female": 43.7,
@@ -92,7 +92,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "France",
+        "Country": "FRANCE",
         "Arrival": 30374,
         "Male": 59.5,
         "Female": 40.5,
@@ -102,7 +102,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Germany",
+        "Country": "GERMANY",
         "Arrival": 33772,
         "Male": 62.3,
         "Female": 37.7,
@@ -112,7 +112,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Greece",
+        "Country": "GREECE",
         "Arrival": 1144,
         "Male": 80.2,
         "Female": 19.8,
@@ -122,7 +122,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Ireland",
+        "Country": "IRELAND",
         "Arrival": 7600,
         "Male": 55.7,
         "Female": 44.3,
@@ -132,7 +132,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Italy",
+        "Country": "ITALY",
         "Arrival": 13659,
         "Male": 67.6,
         "Female": 32.4,
@@ -142,7 +142,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Netherlands",
+        "Country": "NETHERLANDS",
         "Arrival": 15631,
         "Male": 54.2,
         "Female": 45.8,
@@ -152,7 +152,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Norway",
+        "Country": "NORWAY",
         "Arrival": 2790,
         "Male": 58.4,
         "Female": 41.6,
@@ -162,7 +162,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Portugal",
+        "Country": "PORTUGAL",
         "Arrival": 32064,
         "Male": 69.3,
         "Female": 30.7,
@@ -172,7 +172,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Spain",
+        "Country": "SPAIN",
         "Arrival": 6982,
         "Male": 68.0,
         "Female": 32.0,
@@ -182,7 +182,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Sweden",
+        "Country": "SWEDEN",
         "Arrival": 5579,
         "Male": 60.4,
         "Female": 39.6,
@@ -192,7 +192,7 @@
     {
         "Year": "2021",
         "Continent": "Western Europe",
-        "Country": "Switzerland",
+        "Country": "SWITZERLAND",
         "Arrival": 4198,
         "Male": 58.8,
         "Female": 41.2,
@@ -212,7 +212,7 @@
     {
         "Year": "2021",
         "Continent": "Eastern Europe",
-        "Country": "Czech",
+        "Country": "CZECH",
         "Arrival": 983,
         "Male": 68.0,
         "Female": 32.0,
@@ -222,7 +222,7 @@
     {
         "Year": "2021",
         "Continent": "Eastern Europe",
-        "Country": "Hungury",
+        "Country": "HUNGARY",
         "Arrival": 653,
         "Male": 58.3,
         "Female": 41.7,
@@ -232,7 +232,7 @@
     {
         "Year": "2021",
         "Continent": "Eastern Europe",
-        "Country": "Kazakhstan",
+        "Country": "KAZAKHISTAN",
         "Arrival": 2378,
         "Male": 43.7,
         "Female": 56.3,
@@ -242,7 +242,7 @@
     {
         "Year": "2021",
         "Continent": "Eastern Europe",
-        "Country": "Poland",
+        "Country": "POLAND",
         "Arrival": 2461,
         "Male": 67.2,
         "Female": 32.8,
@@ -252,7 +252,7 @@
     {
         "Year": "2021",
         "Continent": "Eastern Europe",
-        "Country": "Russian Federation",
+        "Country": "RUSSIA",
         "Arrival": 17567,
         "Male": 61.2,
         "Female": 38.8,
@@ -262,7 +262,7 @@
     {
         "Year": "2021",
         "Continent": "Eastern Europe",
-        "Country": "Ukraine",
+        "Country": "UKRAINE",
         "Arrival": 5197,
         "Male": 68.9,
         "Female": 31.1,
@@ -272,7 +272,7 @@
     {
         "Year": "2021",
         "Continent": "Africa",
-        "Country": "Egypt",
+        "Country": "EGYPT",
         "Arrival": 1739,
         "Male": 79.8,
         "Female": 20.2,
@@ -292,7 +292,7 @@
     {
         "Year": "2021",
         "Continent": "Africa",
-        "Country": "Mauritius",
+        "Country": "MAURITIUS",
         "Arrival": 2118,
         "Male": 50.7,
         "Female": 49.3,
@@ -302,7 +302,7 @@
     {
         "Year": "2021",
         "Continent": "Africa",
-        "Country": "Nigeria",
+        "Country": "NIGERIA",
         "Arrival": 5516,
         "Male": 61.7,
         "Female": 38.3,
@@ -312,7 +312,7 @@
     {
         "Year": "2021",
         "Continent": "Africa",
-        "Country": "South Africa",
+        "Country": "SOUTH AFRICA",
         "Arrival": 3820,
         "Male": 66.9,
         "Female": 33.1,
@@ -322,7 +322,7 @@
     {
         "Year": "2021",
         "Continent": "Africa",
-        "Country": "Sudan",
+        "Country": "SUDAN",
         "Arrival": 6781,
         "Male": 61.5,
         "Female": 38.5,
@@ -332,7 +332,7 @@
     {
         "Year": "2021",
         "Continent": "Africa",
-        "Country": "Tanzania",
+        "Country": "TANZANIA",
         "Arrival": 6480,
         "Male": 54.8,
         "Female": 45.2,
@@ -342,7 +342,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "Bahrain",
+        "Country": "BAHRAIN",
         "Arrival": 1727,
         "Male": 58.9,
         "Female": 41.1,
@@ -352,7 +352,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "Iraq",
+        "Country": "IRAQ",
         "Arrival": 16213,
         "Male": 68.4,
         "Female": 31.6,
@@ -362,7 +362,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "Israel",
+        "Country": "ISRAEL",
         "Arrival": 4601,
         "Male": 76.5,
         "Female": 23.5,
@@ -372,7 +372,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "Oman",
+        "Country": "OMAN",
         "Arrival": 10174,
         "Male": 66.5,
         "Female": 33.5,
@@ -382,7 +382,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "Saudi Arabia",
+        "Country": "SAUDI ARABIA",
         "Arrival": 1088,
         "Male": 70.7,
         "Female": 29.3,
@@ -392,7 +392,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "Turkey",
+        "Country": "TURKEY",
         "Arrival": 3710,
         "Male": 87.2,
         "Female": 12.8,
@@ -402,7 +402,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "United Arab Emirates",
+        "Country": "UNITED ARAB EMIRATES",
         "Arrival": 3927,
         "Male": 47.9,
         "Female": 52.1,
@@ -412,7 +412,7 @@
     {
         "Year": "2021",
         "Continent": "West Asia",
-        "Country": "Yemen",
+        "Country": "YEMEN",
         "Arrival": 6235,
         "Male": 70.1,
         "Female": 29.9,
@@ -422,7 +422,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Afghanistan",
+        "Country": "AFGHANISTAN",
         "Arrival": 36451,
         "Male": 70.8,
         "Female": 29.2,
@@ -432,7 +432,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Bangladesh",
+        "Country": "BAHRAIN",
         "Arrival": 240554,
         "Male": 66.4,
         "Female": 33.5,
@@ -442,7 +442,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Bhutan",
+        "Country": "BHUTAN",
         "Arrival": 6081,
         "Male": 54.3,
         "Female": 45.7,
@@ -452,7 +452,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Iran",
+        "Country": "IRAN",
         "Arrival": 2369,
         "Male": 54.3,
         "Female": 45.7,
@@ -462,7 +462,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Maldives",
+        "Country": "MALDIVES",
         "Arrival": 26571,
         "Male": 50.9,
         "Female": 49.1,
@@ -472,7 +472,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Nepal",
+        "Country": "NEPAL",
         "Arrival": 52544,
         "Male": 62.7,
         "Female": 37.3,
@@ -482,7 +482,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Pakistan",
+        "Country": "PAKISTAN",
         "Arrival": 8163,
         "Male": 90.2,
         "Female": 9.8,
@@ -492,7 +492,7 @@
     {
         "Year": "2021",
         "Continent": "South Asia",
-        "Country": "Sri Lanka",
+        "Country": "SRI LANKA",
         "Arrival": 25989,
         "Male": 64.3,
         "Female": 35.7,
@@ -502,7 +502,7 @@
     {
         "Year": "2021",
         "Continent": "South East Asia",
-        "Country": "Indonesia",
+        "Country": "INDONESIA",
         "Arrival": 2105,
         "Male": 67.9,
         "Female": 32.1,
@@ -512,7 +512,7 @@
     {
         "Year": "2021",
         "Continent": "South East Asia",
-        "Country": "Malaysia",
+        "Country": "MALAYSIA",
         "Arrival": 6628,
         "Male": 62.4,
         "Female": 37.6,
@@ -522,7 +522,7 @@
     {
         "Year": "2021",
         "Continent": "South East Asia",
-        "Country": "Myanmar",
+        "Country": "MYANMAR",
         "Arrival": 3013,
         "Male": 60.2,
         "Female": 39.8,
@@ -532,7 +532,7 @@
     {
         "Year": "2021",
         "Continent": "South East Asia",
-        "Country": "Phillippines",
+        "Country": "PHILIPPINES",
         "Arrival": 6927,
         "Male": 69.8,
         "Female": 30.2,
@@ -542,7 +542,7 @@
     {
         "Year": "2021",
         "Continent": "South East Asia",
-        "Country": "Singapore",
+        "Country": "SINGAPORE",
         "Arrival": 13407,
         "Male": 54.5,
         "Female": 45.5,
@@ -552,7 +552,7 @@
     {
         "Year": "2021",
         "Continent": "South East Asia",
-        "Country": "Thailand",
+        "Country": "THAILAND",
         "Arrival": 4668,
         "Male": 40.6,
         "Female": 59.4,
@@ -562,7 +562,7 @@
     {
         "Year": "2021",
         "Continent": "South East Asia",
-        "Country": "Vietnam",
+        "Country": "VIETNAM",
         "Arrival": 1104,
         "Male": 68.0,
         "Female": 32.0,
@@ -572,7 +572,7 @@
     {
         "Year": "2021",
         "Continent": "East Asia",
-        "Country": "China",
+        "Country": "CHINA",
         "Arrival": 3502,
         "Male": 83.3,
         "Female": 16.7,
@@ -582,7 +582,7 @@
     {
         "Year": "2021",
         "Continent": "East Asia",
-        "Country": "Japan",
+        "Country": "JAPAN",
         "Arrival": 15358,
         "Male": 70.5,
         "Female": 29.5,
@@ -592,7 +592,7 @@
     {
         "Year": "2021",
         "Continent": "East Asia",
-        "Country": "Korea (Republic Of)",
+        "Country": "KOREA",
         "Arrival": 13330,
         "Male": 72.3,
         "Female": 27.7,
@@ -602,7 +602,7 @@
     {
         "Year": "2021",
         "Continent": "Australasia",
-        "Country": "Australia",
+        "Country": "AUSTRALIA",
         "Arrival": 33864,
         "Male": 58.4,
         "Female": 41.6,
@@ -612,7 +612,7 @@
     {
         "Year": "2021",
         "Continent": "Australasia",
-        "Country": "New Zealand",
+        "Country": "NEW ZEALAND",
         "Arrival": 4497,
         "Male": 60.2,
         "Female": 39.8,
@@ -622,7 +622,7 @@
     {
         "Year": "2020",
         "Continent": "North America",
-        "Country": "Canada",
+        "Country": "CANADA",
         "Arrival": 122868,
         "Male": 53.23,
         "Female": 46.77,
@@ -632,7 +632,7 @@
     {
         "Year": "2020",
         "Continent": "North America",
-        "Country": "United States Of America",
+        "Country": "UNITED STATES OF AMERICA",
         "Arrival": 394092,
         "Male": 55.13,
         "Female": 44.87,
@@ -642,7 +642,7 @@
     {
         "Year": "2020",
         "Continent": "Central And South America",
-        "Country": "Argentina",
+        "Country": "ARGENTINA",
         "Arrival": 4294,
         "Male": 38.91,
         "Female": 61.09,
@@ -652,7 +652,7 @@
     {
         "Year": "2020",
         "Continent": "Central And South America",
-        "Country": "Brazil",
+        "Country": "BRAZIL",
         "Arrival": 8092,
         "Male": 49.86,
         "Female": 50.14,
@@ -662,7 +662,7 @@
     {
         "Year": "2020",
         "Continent": "Central And South America",
-        "Country": "Mexico",
+        "Country": "MEXICO",
         "Arrival": 4580,
         "Male": 47.86,
         "Female": 52.14,
@@ -672,7 +672,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Austria",
+        "Country": "AUSTRIA",
         "Arrival": 9182,
         "Male": 55.48,
         "Female": 44.52,
@@ -682,7 +682,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Belgium",
+        "Country": "BELGIUM",
         "Arrival": 11022,
         "Male": 60.38,
         "Female": 39.62,
@@ -692,7 +692,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Denmark",
+        "Country": "DENMARK",
         "Arrival": 8252,
         "Male": 53.08,
         "Female": 46.92,
@@ -702,7 +702,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Finland",
+        "Country": "FINLAND",
         "Arrival": 4310,
         "Male": 56.87,
         "Female": 43.13,
@@ -712,7 +712,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "France",
+        "Country": "FRANCE",
         "Arrival": 74243,
         "Male": 50.23,
         "Female": 49.77,
@@ -722,7 +722,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Germany",
+        "Country": "GERMANY",
         "Arrival": 72558,
         "Male": 56.68,
         "Female": 43.32,
@@ -732,7 +732,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Greece",
+        "Country": "GREECE",
         "Arrival": 2854,
         "Male": 63.14,
         "Female": 36.86,
@@ -742,7 +742,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Ireland",
+        "Country": "IRELAND",
         "Arrival": 9708,
         "Male": 54.83,
         "Female": 45.17,
@@ -752,7 +752,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Italy",
+        "Country": "ITALY",
         "Arrival": 31186,
         "Male": 58.57,
         "Female": 41.43,
@@ -762,7 +762,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Netherlands",
+        "Country": "NETHERLANDS",
         "Arrival": 26258,
         "Male": 55.29,
         "Female": 44.71,
@@ -772,7 +772,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Norway",
+        "Country": "NORWAY",
         "Arrival": 6224,
         "Male": 50.96,
         "Female": 49.04,
@@ -782,7 +782,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Portugal",
+        "Country": "PORTUGAL",
         "Arrival": 31005,
         "Male": 66.37,
         "Female": 33.63,
@@ -792,7 +792,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Spain",
+        "Country": "SPAIN",
         "Arrival": 16335,
         "Male": 54.76,
         "Female": 45.24,
@@ -802,7 +802,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Sweden",
+        "Country": "SWEDEN",
         "Arrival": 11992,
         "Male": 52.48,
         "Female": 47.52,
@@ -812,7 +812,7 @@
     {
         "Year": "2020",
         "Continent": "Western Europe",
-        "Country": "Switzerland",
+        "Country": "SWITZERLAND",
         "Arrival": 12675,
         "Male": 51.78,
         "Female": 48.22,
@@ -832,7 +832,7 @@
     {
         "Year": "2020",
         "Continent": "Eastern Europe",
-        "Country": "Czech",
+        "Country": "CZECH",
         "Arrival": 3607,
         "Male": 56.47,
         "Female": 43.53,
@@ -842,7 +842,7 @@
     {
         "Year": "2020",
         "Continent": "Eastern Europe",
-        "Country": "Hungary",
+        "Country": "HUNGARY",
         "Arrival": 2964,
         "Male": 48.08,
         "Female": 51.92,
@@ -852,7 +852,7 @@
     {
         "Year": "2020",
         "Continent": "Eastern Europe",
-        "Country": "Kazakhstan",
+        "Country": "KAZAKHISTAN",
         "Arrival": 5918,
         "Male": 40.99,
         "Female": 59.01,
@@ -862,7 +862,7 @@
     {
         "Year": "2020",
         "Continent": "Eastern Europe",
-        "Country": "Poland",
+        "Country": "POLAND",
         "Arrival": 12161,
         "Male": 47.5,
         "Female": 52.5,
@@ -872,7 +872,7 @@
     {
         "Year": "2020",
         "Continent": "Eastern Europe",
-        "Country": "Russian Federation",
+        "Country": "RUSSIA",
         "Arrival": 102166,
         "Male": 43.19,
         "Female": 56.81,
@@ -882,7 +882,7 @@
     {
         "Year": "2020",
         "Continent": "Eastern Europe",
-        "Country": "Ukraine",
+        "Country": "UKRAINE",
         "Arrival": 10619,
         "Male": 47.12,
         "Female": 52.88,
@@ -892,7 +892,7 @@
     {
         "Year": "2020",
         "Continent": "Africa",
-        "Country": "Egypt",
+        "Country": "EGYPT",
         "Arrival": 4886,
         "Male": 69.34,
         "Female": 30.66,
@@ -912,7 +912,7 @@
     {
         "Year": "2020",
         "Continent": "Africa",
-        "Country": "Mauritius",
+        "Country": "MAURITIUS",
         "Arrival": 11410,
         "Male": 44.43,
         "Female": 55.57,
@@ -922,7 +922,7 @@
     {
         "Year": "2020",
         "Continent": "Africa",
-        "Country": "Nigeria",
+        "Country": "NIGERIA",
         "Arrival": 3819,
         "Male": 62.01,
         "Female": 37.99,
@@ -932,7 +932,7 @@
     {
         "Year": "2020",
         "Continent": "Africa",
-        "Country": "South Africa",
+        "Country": "SOUTH AFRICA",
         "Arrival": 12561,
         "Male": 54.0,
         "Female": 46.0,
@@ -942,7 +942,7 @@
     {
         "Year": "2020",
         "Continent": "Africa",
-        "Country": "Sudan",
+        "Country": "SUDAN",
         "Arrival": 9114,
         "Male": 57.79,
         "Female": 42.21,
@@ -952,7 +952,7 @@
     {
         "Year": "2020",
         "Continent": "Africa",
-        "Country": "Tanzania",
+        "Country": "TANZANIA",
         "Arrival": 6501,
         "Male": 52.01,
         "Female": 47.99,
@@ -962,7 +962,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "Bahrain",
+        "Country": "BAHRAIN",
         "Arrival": 3429,
         "Male": 72.56,
         "Female": 27.44,
@@ -972,7 +972,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "Iraq",
+        "Country": "IRAQ",
         "Arrival": 17823,
         "Male": 69.71,
         "Female": 30.29,
@@ -982,7 +982,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "Israel",
+        "Country": "ISRAEL",
         "Arrival": 17444,
         "Male": 56.62,
         "Female": 43.38,
@@ -992,7 +992,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "Oman",
+        "Country": "OMAN",
         "Arrival": 15430,
         "Male": 62.51,
         "Female": 37.49,
@@ -1002,7 +1002,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "Saudi Arabia",
+        "Country": "SAUDI ARABIA",
         "Arrival": 10423,
         "Male": 76.1,
         "Female": 23.9,
@@ -1012,7 +1012,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "Turkey",
+        "Country": "TURKEY",
         "Arrival": 10853,
         "Male": 62.63,
         "Female": 37.37,
@@ -1022,7 +1022,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "United Arab Emirates",
+        "Country": "UNITED ARAB EMIRATES",
         "Arrival": 7387,
         "Male": 51.17,
         "Female": 48.83,
@@ -1032,7 +1032,7 @@
     {
         "Year": "2020",
         "Continent": "West Asia",
-        "Country": "Yemen",
+        "Country": "YEMEN",
         "Arrival": 5882,
         "Male": 70.45,
         "Female": 29.55,
@@ -1042,7 +1042,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Afghanistan",
+        "Country": "AFGHANISTAN",
         "Arrival": 47561,
         "Male": 65.94,
         "Female": 34.0,
@@ -1052,7 +1052,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Bangladesh",
+        "Country": "BANGLADESH",
         "Arrival": 549273,
         "Male": 69.58,
         "Female": 30.4,
@@ -1062,7 +1062,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Bhutan",
+        "Country": "BHUTAN",
         "Arrival": 7901,
         "Male": 51.79,
         "Female": 48.21,
@@ -1072,7 +1072,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Iran",
+        "Country": "IRAN",
         "Arrival": 7090,
         "Male": 55.23,
         "Female": 44.77,
@@ -1082,7 +1082,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Maldives",
+        "Country": "MALDIVES",
         "Arrival": 14536,
         "Male": 53.8,
         "Female": 46.14,
@@ -1092,7 +1092,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Nepal",
+        "Country": "NEPAL",
         "Arrival": 40822,
         "Male": 64.3,
         "Female": 35.7,
@@ -1102,7 +1102,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Pakistan",
+        "Country": "PAKISTAN",
         "Arrival": 14232,
         "Male": 72.11,
         "Female": 27.89,
@@ -1112,7 +1112,7 @@
     {
         "Year": "2020",
         "Continent": "South Asia",
-        "Country": "Sri Lanka",
+        "Country": "SRI LANKA",
         "Arrival": 68646,
         "Male": 57.0,
         "Female": 43.0,
@@ -1122,7 +1122,7 @@
     {
         "Year": "2020",
         "Continent": "South East Asia",
-        "Country": "Indonesia",
+        "Country": "INDONESIA",
         "Arrival": 11795,
         "Male": 57.28,
         "Female": 42.72,
@@ -1132,7 +1132,7 @@
     {
         "Year": "2020",
         "Continent": "South East Asia",
-        "Country": "Malaysia",
+        "Country": "MALAYSIA",
         "Arrival": 69897,
         "Male": 53.95,
         "Female": 46.05,
@@ -1142,7 +1142,7 @@
     {
         "Year": "2020",
         "Continent": "South East Asia",
-        "Country": "Myanmar",
+        "Country": "MYANMAR",
         "Arrival": 35291,
         "Male": 40.14,
         "Female": 59.86,
@@ -1152,7 +1152,7 @@
     {
         "Year": "2020",
         "Continent": "South East Asia",
-        "Country": "Philippines",
+        "Country": "PHILIPPINES",
         "Arrival": 16052,
         "Male": 59.72,
         "Female": 40.28,
@@ -1162,7 +1162,7 @@
     {
         "Year": "2020",
         "Continent": "South East Asia",
-        "Country": "Singapore",
+        "Country": "SINGAPORE",
         "Arrival": 33747,
         "Male": 58.66,
         "Female": 41.34,
@@ -1172,7 +1172,7 @@
     {
         "Year": "2020",
         "Continent": "South East Asia",
-        "Country": "Thailand",
+        "Country": "THAILAND",
         "Arrival": 52626,
         "Male": 41.92,
         "Female": 58.08,
@@ -1182,7 +1182,7 @@
     {
         "Year": "2020",
         "Continent": "South East Asia",
-        "Country": "Vietnam",
+        "Country": "VIETNAM",
         "Arrival": 8828,
         "Male": 44.87,
         "Female": 55.13,
@@ -1192,7 +1192,7 @@
     {
         "Year": "2020",
         "Continent": "East Asia",
-        "Country": "China",
+        "Country": "CHINA",
         "Arrival": 39586,
         "Male": 55.4,
         "Female": 44.6,
@@ -1202,7 +1202,7 @@
     {
         "Year": "2020",
         "Continent": "East Asia",
-        "Country": "Japan",
+        "Country": "JAPAN",
         "Arrival": 48191,
         "Male": 68.3,
         "Female": 31.7,
@@ -1212,7 +1212,7 @@
     {
         "Year": "2020",
         "Continent": "East Asia",
-        "Country": "Korea(Republic Of)",
+        "Country": "KOREA",
         "Arrival": 32302,
         "Male": 61.48,
         "Female": 38.52,
@@ -1222,7 +1222,7 @@
     {
         "Year": "2020",
         "Continent": "East Asia",
-        "Country": "Republic Of China Taiwan",
+        "Country": "TAIWAN",
         "Arrival": 8969,
         "Male": 47.47,
         "Female": 52.53,
@@ -1232,7 +1232,7 @@
     {
         "Year": "2020",
         "Continent": "Australasia",
-        "Country": "Australia",
+        "Country": "ARGENTINA",
         "Arrival": 86758,
         "Male": 56.37,
         "Female": 43.63,
@@ -1242,7 +1242,7 @@
     {
         "Year": "2020",
         "Continent": "Australasia",
-        "Country": "New Zealand",
+        "Country": "NEW ZEALAND",
         "Arrival": 16653,
         "Male": 54.9,
         "Female": 45.1,
@@ -1262,7 +1262,7 @@
     {
         "Year": "2019",
         "Continent": "North America",
-        "Country": "United States Of America",
+        "Country": "UNITED STATES OF AMERICA",
         "Arrival": 1512032,
         "Male": 54.7,
         "Female": 45.3,
@@ -1462,7 +1462,7 @@
     {
         "Year": "2019",
         "Continent": "Eastern Europe",
-        "Country": "CZECH REPUBLIC",
+        "Country": "CZECH",
         "Arrival": 13290,
         "Male": 58.4,
         "Female": 41.6,
@@ -1482,7 +1482,7 @@
     {
         "Year": "2019",
         "Continent": "Eastern Europe",
-        "Country": "KAZAKHSTAN",
+        "Country": "KAZAKHISTAN",
         "Arrival": 15709,
         "Male": 38.5,
         "Female": 61.5,
@@ -1502,7 +1502,7 @@
     {
         "Year": "2019",
         "Continent": "Eastern Europe",
-        "Country": "RUSSIAN FEDERATION",
+        "Country": "RUSSIA",
         "Arrival": 251319,
         "Male": 43.2,
         "Female": 56.8,
@@ -1582,7 +1582,7 @@
     {
         "Year": "2019",
         "Continent": "Africa",
-        "Country": "UNITED REPUBLIC OF TANZANIA",
+        "Country": "TANZANIA",
         "Arrival": 23774,
         "Male": 52.9,
         "Female": 47.1,
@@ -1772,7 +1772,7 @@
     {
         "Year": "2019",
         "Continent": "South East Asia",
-        "Country": "MYANMAR (BURMA)",
+        "Country": "MYANMAR",
         "Arrival": 86842,
         "Male": 42.3,
         "Female": 57.7,
@@ -1842,7 +1842,7 @@
     {
         "Year": "2019",
         "Continent": "East Asia",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "KOREA",
         "Arrival": 149445,
         "Male": 64.6,
         "Female": 35.4,
@@ -1892,7 +1892,7 @@
     {
         "Year": "2018",
         "Continent": "North America",
-        "Country": "United States Of America",
+        "Country": "UNITED STATES OF AMERICA",
         "Arrival": 1456678,
         "Male": 54.8,
         "Female": 45.2,
@@ -2092,7 +2092,7 @@
     {
         "Year": "2018",
         "Continent": "Eastern Europe",
-        "Country": "CZECH REPUBLIC",
+        "Country": "CZECH",
         "Arrival": 13413,
         "Male": 59.5,
         "Female": 40.5,
@@ -2132,7 +2132,7 @@
     {
         "Year": "2018",
         "Continent": "Eastern Europe",
-        "Country": "RUSSIAN FEDERATION",
+        "Country": "RUSSIA",
         "Arrival": 262309,
         "Male": 43.6,
         "Female": 56.4,
@@ -2212,7 +2212,7 @@
     {
         "Year": "2018",
         "Continent": "Africa",
-        "Country": "UNITED REPUBLIC OF TANZANIA",
+        "Country": "TANZANIA",
         "Arrival": 23443,
         "Male": 53.2,
         "Female": 46.8,
@@ -2402,7 +2402,7 @@
     {
         "Year": "2018",
         "Continent": "South East Asia",
-        "Country": "MYANMAR (BURMA)",
+        "Country": "MYANMAR",
         "Arrival": 75773,
         "Male": 42.5,
         "Female": 57.5,
@@ -2472,7 +2472,7 @@
     {
         "Year": "2018",
         "Continent": "East Asia",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "KOREA",
         "Arrival": 150536,
         "Male": 62.7,
         "Female": 37.3,
@@ -2522,7 +2522,7 @@
     {
         "Year": "2017",
         "Continent": "NORTH AMERICA",
-        "Country": "United States Of America",
+        "Country": "UNITED STATES OF AMERICA",
         "Arrival": 1376919,
         "Male": 54.8,
         "Female": 45.2,
@@ -2722,7 +2722,7 @@
     {
         "Year": "2017",
         "Continent": "EASTERN EUROPE",
-        "Country": "CZECH REPUBLIC",
+        "Country": "CZECH",
         "Arrival": 11852,
         "Male": 59.9,
         "Female": 40.1,
@@ -2762,7 +2762,7 @@
     {
         "Year": "2017",
         "Continent": "EASTERN EUROPE",
-        "Country": "RUSSIAN FEDERATION",
+        "Country": "RUSSIA",
         "Arrival": 278904,
         "Male": 43.0,
         "Female": 57.0,
@@ -2842,7 +2842,7 @@
     {
         "Year": "2017",
         "Continent": "AFRICA",
-        "Country": "UNITED REPUBLIC OF TANZANIA",
+        "Country": "TANZANIA",
         "Arrival": 22261,
         "Male": 53.6,
         "Female": 46.4,
@@ -3032,7 +3032,7 @@
     {
         "Year": "2017",
         "Continent": "SOUTH EAST ASIA",
-        "Country": "MYANMAR (BURMA)",
+        "Country": "MYANMAR",
         "Arrival": 56952,
         "Male": 44.9,
         "Female": 55.1,
@@ -3102,7 +3102,7 @@
     {
         "Year": "2017",
         "Continent": "EAST ASIA",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "KOREA",
         "Arrival": 142383,
         "Male": 60.7,
         "Female": 39.3,
@@ -3152,7 +3152,7 @@
     {
         "Year": "2016",
         "Continent": "North America",
-        "Country": "United States Of America",
+        "Country": "UNITED STATES OF AMERICA",
         "Arrival": 1296939,
         "Male": 55.1,
         "Female": 44.9,
@@ -3352,7 +3352,7 @@
     {
         "Year": "2016",
         "Continent": "Eastern Europe",
-        "Country": "CZECH REPUBLIC",
+        "Country": "CZECH",
         "Arrival": 12932,
         "Male": 63.2,
         "Female": 36.8,
@@ -3392,7 +3392,7 @@
     {
         "Year": "2016",
         "Continent": "Eastern Europe",
-        "Country": "RUSSIAN FEDERATION",
+        "Country": "RUSSIA",
         "Arrival": 227749,
         "Male": 43.6,
         "Female": 56.4,
@@ -3472,7 +3472,7 @@
     {
         "Year": "2016",
         "Continent": "Africa",
-        "Country": "UNITED REPUBLIC OF TANZANIA",
+        "Country": "TANZANIA",
         "Arrival": 23026,
         "Male": 52.3,
         "Female": 47.7,
@@ -3662,7 +3662,7 @@
     {
         "Year": "2016",
         "Continent": "South East Asia",
-        "Country": "MYANMAR (BURMA)",
+        "Country": "MYANMAR",
         "Arrival": 51376,
         "Male": 46.5,
         "Female": 53.5,
@@ -3732,7 +3732,7 @@
     {
         "Year": "2016",
         "Continent": "East Asia",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "KOREA",
         "Arrival": 111076,
         "Male": 64.3,
         "Female": 35.7,

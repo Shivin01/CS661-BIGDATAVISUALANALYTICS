@@ -1,7 +1,7 @@
 import {
     Card,
     CardContent,
-    CardDescription,
+    CardDescription, CardFooter,
     CardHeader,
     CardTitle,
 } from "~/components/ui/card"
@@ -10,7 +10,8 @@ import {Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList} from "~/comp
 import React from "react";
 import ChoroplethMap from "~/components/IndiaDashboard/IndiaMap.tsx";
 import {StateWiseGraph} from "~/components/IndiaDashboard/IndiaStateLineGraph.tsx";
-// import UttarPradeshChoroplethMap from "~/components/IndiaDashboard/StateMap.tsx";
+import WorldMap from "~/components/MainDashboard/worldmap.tsx";
+import {Button} from "~/components/ui/button.tsx";
 
 export function DashboadIndia() {
 
@@ -45,20 +46,15 @@ export function DashboadIndia() {
                             </CardDescription>
                         </CardHeader>
                     </Card>
-                    <Card x-chunk="dashboard-01-chunk-2">
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Country 1</CardTitle>
+                    <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
+                        <CardHeader className="px-7">
+                            <CardTitle>Trend In Tourism</CardTitle>
+                            <CardDescription>
+                                Trends in Tourism from 1952 to 2007 ( Click on Play ).
+                            </CardDescription>
                         </CardHeader>
                         <CardContent>
                             <ChoroplethMap/>
-                        </CardContent>
-                    </Card>
-                    <Card x-chunk="dashboard-01-chunk-3">
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Active Now</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <StateWiseGraph />
                         </CardContent>
                     </Card>
 

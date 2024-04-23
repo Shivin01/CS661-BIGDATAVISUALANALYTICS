@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import Plot from 'react-plotly.js';
 import data from './Data/StateWiseJSON.json';
+import {useNavigate} from "react-router-dom";
 
 function ChoroplethMap() {
+
+    const navigate = useNavigate()
 
     let states = [];
     let values = [];
@@ -22,10 +25,9 @@ function ChoroplethMap() {
 
     const handleSelect = (e) => {
         console.log(e)
+        console.log(e.points[0].location.replace(' ', '').toLowerCase())
+        navigate(`../state/${e.points[0].location.replace(' ', '').toLowerCase()}`)
     }
-
-    console.log(states, 'states');
-    console.log(values, 'values');
 
     return (
         <div>
@@ -48,7 +50,11 @@ function ChoroplethMap() {
                     },
                 ]}
                 layout={{
-                    title: 'Active Cases in India',
+                    width: 1500, // Set the width of the chart
+                    height: 600, // Set the height of the chart
+                    // title: 'Trend in Tourism',
+                    plot_bgcolor: 'transparent', // Set plot background color to transparent
+                    paper_bgcolor: 'transparent', // Set paper (canvas) background color to transparent
                     geo: {
                         fitbounds: 'locations',
                         visible: false,
