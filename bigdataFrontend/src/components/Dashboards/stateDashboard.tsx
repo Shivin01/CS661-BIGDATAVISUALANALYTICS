@@ -7,34 +7,14 @@ import {
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "~/components/ui/card.tsx"
-import {Link, useNavigate, useParams} from "react-router-dom";
-import data from "~/components/GenderDashboard/Data/output8_updated.json";
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue
-} from "~/components/ui/select.tsx";
+import {Link, useParams} from "react-router-dom";
 import React from "react";
-import {LineGraphComponent} from "~/components/GenderDashboard/GenderBarGraph.tsx";
-import {AgeGraph} from "~/components/GenderDashboard/AgeGroupGraphs.tsx";
-import {PurposeOfVisit} from "~/components/GenderDashboard/PurposeOfVisit.tsx";
-import {LineGraphStateComponent, StateWiseGraph} from "~/components/IndiaDashboard/IndiaStateLineGraph.tsx";
-import Data2019 from '../Dashboards/Data/2019_updated_data.json'
-import Data2020 from '../Dashboards/Data/2019_updated_data.json'
-import Data2021 from '../Dashboards/Data/2021_updated_data.json'
+import {LineGraphStateComponent} from "~/components/IndiaDashboard/IndiaStateLineGraph.tsx";
 import stateConfigData from '../Dashboards/Data/StatesandUTs.json';
-import topMonu from '../Dashboards/Data/output.json'
 import {StatePieChart} from "~/components/StateDashboard/StatePieChart.tsx";
-import {StateTopMonument} from "~/components/StateDashboard/StateTopMonuments.tsx";
 
 
 export function StateDashboard() {
@@ -59,24 +39,6 @@ export function StateDashboard() {
                 </header>
                 <main className="grid flex-1 items-start gap-4 p-4 grid-cols-1 sm:px-6 sm:py-0 md:gap-6 lg:grid-cols-2 xl:grid-cols-2">
 
-
-                    {/*<Card className="" x-chunk="dashboard-05-chunk-3">*/}
-                    {/*    <CardHeader className="px-7">*/}
-                    {/*        <CardTitle>{stateReadData} Foreign and Domestic Travellers</CardTitle>*/}
-                    {/*        <CardDescription>*/}
-                    {/*            Ranking of India*/}
-                    {/*        </CardDescription>*/}
-                    {/*    </CardHeader>*/}
-                    {/*    <CardContent>*/}
-                    {/*        /!*<LineGraphStateComponent state={stateName.toUpperCase()} />*!/*/}
-                    {/*        /!*<StatePieChart state={stateName.toUpperCase()} />*!/*/}
-                    {/*        <StateTopMonument state={stateName.toUpperCase()} type="Domestic Travel" />*/}
-                    {/*    </CardContent>*/}
-                    {/*</Card>*/}
-
-                    <StatePieChart state={stateName.toUpperCase()} stateReadData={stateReadData}/>
-
-                    {/*Line graph of Gender*/}
                     <Card x-chunk="dashboard-01-chunk-3">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium">Active Now</CardTitle>
@@ -85,6 +47,11 @@ export function StateDashboard() {
                             <LineGraphStateComponent state={stateName.toUpperCase()} />
                         </CardContent>
                     </Card>
+
+                    <StatePieChart state={stateName.toUpperCase()} stateReadData={stateReadData}/>
+
+                    {/*Line graph of Gender*/}
+
 
                     {/*Age group*/}
 

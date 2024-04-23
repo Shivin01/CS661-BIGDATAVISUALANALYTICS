@@ -35,14 +35,14 @@ export function DashboadIndia() {
                     className="grid flex-1 items-start gap-4 p-4 grid-cols-1 sm:px-6 sm:py-0 md:gap-6 lg:grid-cols-2 xl:grid-cols-2">
                     <Card className="lg:col-span-2 xl:col-span-2" x-chunk="dashboard-05-chunk-0">
                         <CardHeader className="pb-3">
-                            <CardTitle>World V/S India</CardTitle>
+                            <CardTitle>India</CardTitle>
                             <CardDescription className="leading-relaxed">
-                                Tourism and Hospitality play an extraordinary role in driving the nation's growth and
-                                prosperity. India proudly boasts a tapestry of geographical diversity, encompassing
-                                awe-inspiring world heritage sites and niche tourism offerings such as captivating
-                                cruise tourism, exhilarating adventure tourism, renowned medical tourism, and
-                                mesmerizing eco-tourism. These unique offerings have resulted in an exponential increase
-                                in tourist arrivals.
+                                Indian tourism is a vibrant tapestry of culture, history, and natural beauty, fueled by
+                                an ever-evolving blend of tradition and modernity, making it a dynamic destination for
+                                global travelers seeking immersive experiences amidst diverse landscapes and rich
+                                heritage." As for trends, there's been a surge in eco-tourism, wellness retreats, and
+                                experiential travel, reflecting a growing preference for sustainable and authentic
+                                encounters with local culture and nature.
                             </CardDescription>
                         </CardHeader>
                     </Card>
@@ -50,7 +50,6 @@ export function DashboadIndia() {
                         <CardHeader className="px-7">
                             <CardTitle>Trend In Tourism</CardTitle>
                             <CardDescription>
-                                Trends in Tourism from 1952 to 2007 ( Click on Play ).
                             </CardDescription>
                         </CardHeader>
                         <CardContent>

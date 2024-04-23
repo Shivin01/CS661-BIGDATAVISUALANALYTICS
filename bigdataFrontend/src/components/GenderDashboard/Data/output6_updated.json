@@ -887,7 +887,7 @@
     {
         "Year": "2021",
         "Continent": "East Asia",
-        "Country": "Korea(republic Of)",
+        "Country": "Korea",
         "Arrival": 13330,
         "0-14": 13.8,
         "15-24": 4.7,
@@ -1817,7 +1817,7 @@
     {
         "Year": "2020",
         "Continent": "East Asia",
-        "Country": "republic of korea",
+        "Country": "Korea",
         "Arrival": 32302,
         "0-14": 6.2,
         "15-24": 8.0,
@@ -2762,7 +2762,7 @@
     {
         "Year": "2019",
         "Continent": "East Asia",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "Korea",
         "Arrival": 149445,
         "0-14": 4.7,
         "15-24": 6.2,
@@ -3707,7 +3707,7 @@
     {
         "Year": "2018",
         "Continent": "East Asia",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "Korea",
         "Arrival": 150536,
         "0-14": 4.5,
         "15-24": 6.7,
@@ -4652,7 +4652,7 @@
     {
         "Year": "2017",
         "Continent": "EASTASIA",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "Korea",
         "Arrival": 142383,
         "0-14": 4.4,
         "15-24": 8.0,
@@ -5597,7 +5597,7 @@
     {
         "Year": "2016",
         "Continent": "East Asia",
-        "Country": "REPUBLIC OF KOREA",
+        "Country": "Korea",
         "Arrival": 111076,
         "0-14": 4.9,
         "15-24": 8.7,

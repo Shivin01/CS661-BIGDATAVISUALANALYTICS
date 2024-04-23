@@ -34,7 +34,7 @@ export function AgeYearWiseRadialGraphSelect(state) {
     const [ageData, setAgeData] = useState({})
 
     const handleSelect = (e) => {
-        console.log(e)
+        console.log(e, e)
         setSelectedYear(e)
         const filterAgeData = countryData.filter((d) => d.Year === selectedYear)
         const ageGroups = [
@@ -54,6 +54,8 @@ export function AgeYearWiseRadialGraphSelect(state) {
         }));
         setAgeData(convertedData)
     }
+
+    console.log('transformed', ageData);
 
     return (
         <>
@@ -115,7 +117,7 @@ export function AgeGraph(country) {
 
     const countryData = data.filter((d) => d.Country.toUpperCase() === country.country)
 
-
+    console.log('countryData', countryData)
     const transformedData: AgeGroupData[] = Object.keys(countryData[0])
         .filter(key => key !== 'Year' && key !== 'Continent' && key !== 'Country' && key !== 'Arrival' && key !== 'iso_alpha' && key !== 'iso_num')
         .map(ageGroup => ({

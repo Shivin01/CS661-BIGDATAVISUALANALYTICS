@@ -63,13 +63,6 @@
         "state": "Uttar Pradesh"
     },
     {
-        "city": "Agra",
-        "monument": "Total",
-        "domestic": 5209587.0,
-        "foreign": 60086.0,
-        "state": "Uttar Pradesh"
-    },
-    {
         "city": "Lucknow",
         "monument": "Site of Sahet mahet",
         "domestic": 51796.0,
@@ -88,13 +81,6 @@
         "monument": "Piprahwa & Ganwaria",
         "domestic": 23153.0,
         "foreign": 101.0,
-        "state": "Uttar Pradesh"
-    },
-    {
-        "city": "Lucknow",
-        "monument": "Total",
-        "domestic": 186778.0,
-        "foreign": 537.0,
         "state": "Uttar Pradesh"
     },
     {
@@ -123,13 +109,6 @@
         "monument": "Rani Jhansi Fort",
         "domestic": 10836.0,
         "foreign": 15.0,
-        "state": "Uttar Pradesh"
-    },
-    {
-        "city": "Jhansi",
-        "monument": "Total",
-        "domestic": 411308.0,
-        "foreign": 84.0,
         "state": "Uttar Pradesh"
     },
     {
@@ -175,13 +154,6 @@
         "state": "Uttar Pradesh"
     },
     {
-        "city": "Sarnath",
-        "monument": "Total",
-        "domestic": 519893.0,
-        "foreign": 1955.0,
-        "state": "Uttar Pradesh"
-    },
-    {
         "city": "Thrissur",
         "monument": "Bekal Fort, Pallikkare, Distt. Kasargod",
         "domestic": 200127.0,
@@ -210,13 +182,6 @@
         "state": "Kerala"
     },
     {
-        "city": "Thrissur",
-        "monument": "Total",
-        "domestic": 513878.0,
-        "foreign": 1320.0,
-        "state": "Kerala"
-    },
-    {
         "city": "Chennai",
         "monument": "Group of Monuments Mamallapuram",
         "domestic": 1142150.0,
@@ -235,13 +200,6 @@
         "monument": "Tiger headed Rock cut temple & two other monuments, Saluvankuppam",
         "domestic": 81313.0,
         "foreign": 25579.0,
-        "state": "Tamil Nadu"
-    },
-    {
-        "city": "Chennai",
-        "monument": "Total",
-        "domestic": 1411959.0,
-        "foreign": 181046.0,
         "state": "Tamil Nadu"
     },
     {
@@ -291,13 +249,6 @@
         "monument": "Fort Vattakottai",
         "domestic": 53200.0,
         "foreign": 9174.0,
-        "state": "Tamil Nadu"
-    },
-    {
-        "city": "Thiruchirapalli",
-        "monument": "Total",
-        "domestic": 211757.0,
-        "foreign": 29933.0,
         "state": "Tamil Nadu"
     },
     {
@@ -378,13 +329,6 @@
         "state": "Madhya Pradesh"
     },
     {
-        "city": "Bhopal",
-        "monument": "Total",
-        "domestic": 1271045.0,
-        "foreign": 853.0,
-        "state": "Madhya Pradesh"
-    },
-    {
         "city": "Jabalpur",
         "monument": "Ancient Site and Adamgrah rock shelter, Kalamdi Rasuliya and kishanpur",
         "domestic": 18655.0,
@@ -403,13 +347,6 @@
         "monument": "Group of Temple Parameshvar shiv and Karan Temple, Amarkantak",
         "domestic": 30981.0,
         "foreign": 133.0,
-        "state": "Madhya Pradesh"
-    },
-    {
-        "city": "Jabalpur",
-        "monument": "Total",
-        "domestic": 293111.0,
-        "foreign": 969.0,
         "state": "Madhya Pradesh"
     },
     {
@@ -455,13 +392,6 @@
         "state": "Karnataka"
     },
     {
-        "city": "Dharwad",
-        "monument": "Total",
-        "domestic": 1047941.0,
-        "foreign": 903.0,
-        "state": "Karnataka"
-    },
-    {
         "city": "Hampi",
         "monument": "Group of Monuments, Hampi",
         "domestic": 425950.0,
@@ -473,13 +403,6 @@
         "monument": "Bellary Fort",
         "domestic": 17263.0,
         "foreign": 15.0,
-        "state": "Karnataka"
-    },
-    {
-        "city": "Hampi",
-        "monument": "Total",
-        "domestic": 443213.0,
-        "foreign": 1259.0,
         "state": "Karnataka"
     },
     {
@@ -511,13 +434,6 @@
         "state": "Karnataka"
     },
     {
-        "city": "Banglore",
-        "monument": "Total",
-        "domestic": 529404.0,
-        "foreign": 3348.0,
-        "state": "Karnataka"
-    },
-    {
         "city": "Raiganj",
         "monument": "Cooch Bihar Palace",
         "domestic": 228176.0,
@@ -532,13 +448,6 @@
         "state": "West Bengal"
     },
     {
-        "city": "Raiganj",
-        "monument": "Total",
-        "domestic": 585303.0,
-        "foreign": 329.0,
-        "state": "West Bengal"
-    },
-    {
         "city": "Kolkata",
         "monument": "Bishnupur Temples",
         "domestic": 111814.0,
@@ -550,13 +459,6 @@
         "monument": "Metcelf-Hall",
         "domestic": 7812.0,
         "foreign": 36.0,
-        "state": "West Bengal"
-    },
-    {
-        "city": "Kolkata",
-        "monument": "Total",
-        "domestic": 119626.0,
-        "foreign": 258.0,
         "state": "West Bengal"
     },
     {
@@ -578,13 +480,6 @@
         "monument": "Baba Pyara Caves, Junagadh & Khapra Khodiya Caves, Junagadh",
         "domestic": 2715.0,
         "foreign": 6.0,
-        "state": "Gujarat"
-    },
-    {
-        "city": "Rajkot",
-        "monument": "Total",
-        "domestic": 34400.0,
-        "foreign": 33.0,
         "state": "Gujarat"
     },
     {
@@ -613,13 +508,6 @@
         "monument": "Rudabai Step Well, Adalaj",
         "domestic": 267707.0,
         "foreign": 522.0,
-        "state": "Gujarat"
-    },
-    {
-        "city": "Vadodara",
-        "monument": "Total",
-        "domestic": 822620.0,
-        "foreign": 1396.0,
         "state": "Gujarat"
     },
     {
@@ -655,13 +543,6 @@
         "monument": "Ruins of Buddhist Temples and Images lalitgiri",
         "domestic": 24361.0,
         "foreign": 260.0,
-        "state": "Odisha"
-    },
-    {
-        "city": "Bhubaneswar",
-        "monument": "Total",
-        "domestic": 824707.0,
-        "foreign": 777.0,
         "state": "Odisha"
     },
     {
@@ -704,13 +585,6 @@
         "monument": "Aurangabad Caves",
         "domestic": 68642.0,
         "foreign": 79.0,
-        "state": "Maharashtra"
-    },
-    {
-        "city": "Aurangabad",
-        "monument": "Total",
-        "domestic": 1293929.0,
-        "foreign": 2673.0,
         "state": "Maharashtra"
     },
     {
@@ -805,13 +679,6 @@
         "state": "Maharashtra"
     },
     {
-        "city": "Mumbai",
-        "monument": "Total",
-        "domestic": 1724562.0,
-        "foreign": 3062.0,
-        "state": "Maharashtra"
-    },
-    {
         "city": "Nagpur",
         "monument": "Gawilgarh Fort",
         "domestic": 9219.0,
@@ -826,13 +693,6 @@
         "state": "Maharashtra"
     },
     {
-        "city": "Nagpur",
-        "monument": "Total",
-        "domestic": 11125.0,
-        "foreign": 13.0,
-        "state": "Maharashtra"
-    },
-    {
         "city": "Chandigarh",
         "monument": "Suraj Kund",
         "domestic": 14651.0,
@@ -844,13 +704,6 @@
         "monument": "Sheikh Chilli's Tomb",
         "domestic": 52951.0,
         "foreign": 147.0,
-        "state": "Chandigarh"
-    },
-    {
-        "city": "Chandigarh",
-        "monument": "Total",
-        "domestic": 67602.0,
-        "foreign": 196.0,
         "state": "Chandigarh"
     },
     {
@@ -931,13 +784,6 @@
         "state": "Delhi"
     },
     {
-        "city": "Delhi",
-        "monument": "Total",
-        "domestic": 3664640.0,
-        "foreign": 21348.0,
-        "state": "Delhi"
-    },
-    {
         "city": "Guwahati",
         "monument": "Ahom Raja's Palace",
         "domestic": 34640.0,
@@ -973,22 +819,8 @@
         "state": "Assam"
     },
     {
-        "city": "Guwahati",
-        "monument": "Total",
-        "domestic": 157674.0,
-        "foreign": 127.0,
-        "state": "Assam"
-    },
-    {
         "city": "Goa",
         "monument": "Upper Fort Aguada",
-        "domestic": 656756.0,
-        "foreign": 1057.0,
-        "state": "Goa"
-    },
-    {
-        "city": "Goa",
-        "monument": "Total",
         "domestic": 656756.0,
         "foreign": 1057.0,
         "state": "Goa"
@@ -1015,13 +847,6 @@
         "state": "Telangana"
     },
     {
-        "city": "Hyderabad",
-        "monument": "Total",
-        "domestic": 1473467.0,
-        "foreign": 2265.0,
-        "state": "Telangana"
-    },
-    {
         "city": "Jaipur",
         "monument": "Ancient Site Bhangarh",
         "domestic": 147549.0,
@@ -1040,13 +865,6 @@
         "monument": "Deeg Bhawan",
         "domestic": 33004.0,
         "foreign": 27.0,
-        "state": "Rajasthan"
-    },
-    {
-        "city": "Jaipur",
-        "monument": "Total",
-        "domestic": 238434.0,
-        "foreign": 996.0,
         "state": "Rajasthan"
     },
     {
@@ -1071,22 +889,8 @@
         "state": "Rajasthan"
     },
     {
-        "city": "Jodhpur",
-        "monument": "Total",
-        "domestic": 1372020.0,
-        "foreign": 568.0,
-        "state": "Rajasthan"
-    },
-    {
         "city": "Leh",
         "monument": "Ancient Palace Leh",
-        "domestic": 52402.0,
-        "foreign": 176.0,
-        "state": "Ladakh"
-    },
-    {
-        "city": "Leh",
-        "monument": "Total",
         "domestic": 52402.0,
         "foreign": 176.0,
         "state": "Ladakh"
@@ -1127,22 +931,8 @@
         "state": "Bihar"
     },
     {
-        "city": "Patna",
-        "monument": "Total",
-        "domestic": 506293.0,
-        "foreign": 352.0,
-        "state": "Bihar"
-    },
-    {
         "city": "Raipur",
         "monument": "Temple of Laxman and Old sites including sculptures sirpur",
-        "domestic": 53049.0,
-        "foreign": 1.0,
-        "state": "Chhattisgarh"
-    },
-    {
-        "city": "Raipur",
-        "monument": "Total",
         "domestic": 53049.0,
         "foreign": 1.0,
         "state": "Chhattisgarh"
@@ -1159,13 +949,6 @@
         "monument": "Rock-cut Temples and Sculptures",
         "domestic": 40771.0,
         "foreign": 272.0,
-        "state": "Himachal Pradesh"
-    },
-    {
-        "city": "Shimla",
-        "monument": "Total",
-        "domestic": 122665.0,
-        "foreign": 623.0,
         "state": "Himachal Pradesh"
     },
     {
@@ -1187,13 +970,6 @@
         "monument": "Group of Temples at kiramchi, District Udhampur",
         "domestic": 7383.0,
         "foreign": 8.0,
-        "state": "Jammu and Kashmir"
-    },
-    {
-        "city": "Srinagar",
-        "monument": "Total",
-        "domestic": 37935.0,
-        "foreign": 14.0,
         "state": "Jammu and Kashmir"
     },
     {
@@ -1229,20 +1005,6 @@
         "monument": "Buddhist Remains on hill top at Guntupalli, W.G.District",
         "domestic": 14134.0,
         "foreign": 22.0,
-        "state": "Andhra Pradesh"
-    },
-    {
-        "city": "Amaravati",
-        "monument": "Total",
-        "domestic": 177808.0,
-        "foreign": 116.0,
-        "state": "Andhra Pradesh"
-    },
-    {
-        "city": "Amaravati",
-        "monument": "Grand Total",
-        "domestic": 26046891.0,
-        "foreign": 318673.0,
         "state": "Andhra Pradesh"
     }
 ]

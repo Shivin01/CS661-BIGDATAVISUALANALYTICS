@@ -13,8 +13,50 @@ import {
 import {LineGraphStateComponent} from "~/components/IndiaDashboard/IndiaStateLineGraph.tsx";
 import {Pie, PieChart, Tooltip} from "recharts";
 import Plot from 'react-plotly.js';
-import topMonu from "~/components/Dashboards/Data/output.json";
+import topMonu from "~/components/Dashboards/Data/output_1.json";
+import cityData from "~/components/Dashboards/Data/2021_updated_data.json"
 import {Avatar, AvatarFallback, AvatarImage} from "~/components/ui/avatar.tsx";
+
+
+
+export function StateCityMonument(state) {
+
+    const cD = cityData.filter(d => d.state.replaceAll(" ", "").replace(/[^a-zA-Z ]/g, "").toLowerCase() === state.state.replaceAll(" ", "").replace(/[^a-zA-Z ]/g, "").toLowerCase())
+    console.log(cD, 'cityData');
+
+    let type = 'foreign';
+    if (state.type == "Domestic Travel") {
+        type = 'domestic'
+    }
+
+    return (
+        <Card x-chunk="dashboard-01-chunk-5">
+            <CardHeader>
+                <CardTitle>Over All Ranking</CardTitle>
+            </CardHeader>
+            <CardContent className="grid gap-8">
+                {cD.map(item => {
+                    return (
+                        <div className="flex items-center gap-4">
+                            <Avatar className="hidden h-9 w-9 sm:flex">
+                                <AvatarImage src="/avatars/01.png" alt="Avatar"/>
+                                <AvatarFallback>{item.city}</AvatarFallback>
+                            </Avatar>
+                            <div className="grid gap-1">
+                                <p className="text-sm font-medium leading-none">
+                                    {item.city} - {item.monument}
+                                </p>
+                            </div>
+                            <div className="ml-auto font-medium">{type === 'domestic' ? item.domestic : item.foreign}</div>
+                        </div>
+                    )
+                })}
+
+            </CardContent>
+        </Card>
+
+    );
+}
 
 function uniqueElementsByKey(array, key) {
     return Object.values(array.reduce((unique, item) => {
@@ -27,13 +69,16 @@ function uniqueElementsByKey(array, key) {
 export function StateTopMonument(state) {
 
     const topMonuments = topMonu.filter(d => d.State.replaceAll(" ", "").replace(/[^a-zA-Z ]/g, "").toLowerCase() === state.state.replaceAll(" ", "").replace(/[^a-zA-Z ]/g, "").toLowerCase())
+    // console.log(state.state.replaceAll(" ", "").replace(/[^a-zA-Z ]/g, "").toLowerCase())
+    // console.log(topMonuments, 'topMonuments');
+
     let type = 'foreign';
     if (state.type == "Domestic Travel") {
         type = 'domestic'
     }
 
     const FinalData = topMonuments.filter(d => d.visitors_type === type)
-    console.log(FinalData, 'FinalData');
+    // console.log(FinalData, 'FinalData');
 
     const sortedData = FinalData.sort((a, b) => a['rank'] - b['rank']);
 
@@ -94,7 +139,8 @@ export function StatePieChart(state) {
         yearWiseDataFinal.push(yearWiseData[i])
     }
     const handleClick = (e) => {
-        setDataType(e.points[0].label)
+        const capitalizedString = e.points[0].label.charAt(0).toUpperCase() + e.points[0].label.slice(1);
+        setDataType(capitalizedString)
     }
 
     let dtv = 0
@@ -135,10 +181,18 @@ export function StatePieChart(state) {
             </Card>
             <Card className="" x-chunk="dashboard-05-chunk-3">
                 <CardHeader className="px-7">
-                    <CardTitle>{state.stateReadData} Foreign and Domestic Travellers</CardTitle>
+                    <CardTitle>{state.stateReadData} { dataType.split(' ')[0] } Travellers</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <StateTopMonument state={state.state.toUpperCase()} type={dataType}/>
+                </CardContent>
+            </Card>
+            <Card className="" x-chunk="dashboard-05-chunk-3">
+                <CardHeader className="px-7">
+                    <CardTitle>{state.stateReadData} { dataType.split(' ')[0] } Travellers</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <StateCityMonument state={state.state.toUpperCase()} type={dataType}/>
                 </CardContent>
             </Card>
         </>

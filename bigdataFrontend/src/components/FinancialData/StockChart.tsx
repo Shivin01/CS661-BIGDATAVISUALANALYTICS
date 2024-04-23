@@ -123,9 +123,10 @@ const StockChart: React.FC = () => {
         <>
             <CardHeader className="px-7">
                 <CardTitle>Trend In Stock Market Analysis</CardTitle>
+                <br/>
                 <Select onValueChange={handleSelect}>
                     <SelectTrigger className="w-[180px]">
-                        <SelectValue placeholder="Select first Country"/>
+                        <SelectValue placeholder="Select Company"/>
                     </SelectTrigger>
                     <SelectContent>
                         <SelectGroup>

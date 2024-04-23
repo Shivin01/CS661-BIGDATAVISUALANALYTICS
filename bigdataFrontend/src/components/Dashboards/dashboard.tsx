@@ -58,7 +58,7 @@ export function Dashboard() {
                         <CardHeader className="px-7">
                             <CardTitle>Trend In Tourism</CardTitle>
                             <CardDescription>
-                                Trends in Tourism from 1952 to 2007 ( Click on Play ).
+                                Trends in Tourism from 2016 to 2021 ( Click on Play ).
                             </CardDescription>
                         </CardHeader>
                         <CardContent>

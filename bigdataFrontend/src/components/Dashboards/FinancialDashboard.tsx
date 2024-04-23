@@ -52,7 +52,7 @@ export function FinancialDashboard() {
                         {/*</CardContent>*/}
                     </Card>
 
-                    <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
+                    <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-5">
                         <CardHeader className="px-7">
                             <CardTitle>Financial Data for Hotel Industry</CardTitle>
                         </CardHeader>
@@ -61,7 +61,7 @@ export function FinancialDashboard() {
                         </CardContent>
                     </Card>
 
-                    <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
+                    <Card className="col-span-2" x-chunk="dashboard-01-chunk-5">
                         <CardHeader className="px-7">
                             <CardTitle>Financial Data for AirLines Industry</CardTitle>
                         </CardHeader>
@@ -70,14 +70,14 @@ export function FinancialDashboard() {
                         </CardContent>
                     </Card>
 
-                    <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
-                        <CardHeader className="px-7">
-                            <CardTitle>Financial Data for AirLines Industry</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <YearlyRevenueChart />
-                        </CardContent>
-                    </Card>
+                    {/*<Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">*/}
+                    {/*    <CardHeader className="px-7">*/}
+                    {/*        <CardTitle>Financial Data for AirLines Industry</CardTitle>*/}
+                    {/*    </CardHeader>*/}
+                    {/*    <CardContent>*/}
+                    {/*        <YearlyRevenueChart />*/}
+                    {/*    </CardContent>*/}
+                    {/*</Card>*/}
 
                 </div>
             </div>
