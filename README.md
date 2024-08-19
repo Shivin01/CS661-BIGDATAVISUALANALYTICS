@@ -1,6 +1,8 @@
 # CS661 Big Data and Visual Analytics Project
 ## How to run the code.
 
+Follow the below steps to run the program
+
 ## Run the dolloing steps
 
 ```sh
